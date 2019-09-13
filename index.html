@@ -44,62 +44,72 @@
         </div>
     </div>
     <div class="menu wrapper">
-        <ul class="nav">
+        <div class="menu-icon">
+            <img src="image/Menu_butter.png" alt="" class="burger">
+        </div>
+        <ul class="nav display">
+            <div class="close-icon"></div>
             <li class="nav-item">
                 <a class="nav-link active" href="#">Главная</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">O компании</a>
+                <a class="nav-link" href="#">O компании <div class="tri"></div></a>
                 <ul class="submenu">
-                    <li><a href="">Общая информация </a></li>
-                    <li><a href="">Производственная база</a></li>
-                    <li><a href="">Склад </a></li>
-                    <li><a href="">Партнеры</a></li>
-                    <li><a href="">Материалы</a></li>
-                    <li><a href="">Мероприятия </a></li>
-                    <li><a href="">Вакансии</a></li>
+                    <li class="submenu_li"><a class="submenu_a" href="">Общая информация </a></li>
+                    <li class="submenu_li"><a class="submenu_a" href="">Производственная база</a></li>
+                    <li class="submenu_li"><a class="submenu_a" href="">Склад </a></li>
+                    <li class="submenu_li"><a class="submenu_a" href="">Партнеры</a></li>
+                    <li class="submenu_li"><a class="submenu_a" href="">Материалы</a></li>
+                    <li class="submenu_li"><a class="submenu_a" href="">Мероприятия </a></li>
+                    <li class="submenu_li"><a class="submenu_a" href="">Вакансии</a></li>
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Направления</a>
+                <a class="nav-link" href="#">Направления <div class="tri"></div></a>
                 <ul class="submenu">
-                    <li><a href="">Промышленность</a></li>
-                    <ul class="sub-submenu">
-                        <li><a href="">Металлургическая</a></li>
-                        <ul class="tab">
-                            <li><a href="">Решения</a></li>
-                            <li><a href="">Услуги </a></li>
-                            <li><a href="">Проекты</a></li>
-                            <li><a href="">Партнеры</a></li>
-                        </ul>
-                        <li><a href="">Нефтехимическая</a></li>
-                        <li><a href="">Горнорудная </a></li>
-                        <li><a href="">Пищевая</a></li>
-                        <li><a href="">Машиностроение </a></li>
-                    </ul>
-                    <li><a href="">Энергетика</a></li>
-                    <li><a href="">Индустрия 4.0</a></li>
+                    <li class="submenu_li">
+                        <a class="submenu_a" href="">Промышленность<div class="tri"></div></a>
+                        <ul class="sub-submenu">
+                            <li><a href="" class="tab-wrap">Металлургическая</a>
+                                <ul class="tab">
+                                    <li><a href="">Решения</a></li>
+                                    <li><a href="">Услуги </a></li>
+                                    <li><a href="">Проекты</a></li>
+                                    <li><a href="">Партнеры</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Нефтехимическая</a></li>
+                            <li><a href="">Горнорудная </a></li>
+                            <li><a href="">Пищевая</a></li>
+                            <li><a href="">Машиностроение </a></li>
+                    </li>
                 </ul>
-            </li>
-
-
-            <li class="nav-item">
-                <a class="nav-link " href="#">Сертификаты</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">Проекты</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">Контакты</a>
-            </li>
+            <li class="submenu_li"><a class="submenu_a" href="">Энергетика</a></li>
+            <li class="submenu_li"><a class="submenu_a" href="">Индустрия 4.0</a></li>
         </ul>
-        <div id="search">
-            <input type="text" placeholder="Поиск по сайту" class="search-field">
-            <div class="search-btn"><img src="image/search.png" alt="search"></div>
-        </div>
+        </li>
 
-        <div class="btn"><a href="#">Получить консультацию</a></div>
+
+        <li class="nav-item">
+            <a class="nav-link " href="#">Сертификаты</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">Проекты</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">Контакты</a>
+        </li>
+        </ul>
+        <div class="search-row">
+            <div id="search">
+                <input type="text" placeholder="Поиск по сайту" class="search-field">
+                <div class="search-btn"><img src="image/search.png" alt="search"></div>
+            </div>
+
+            <div class="btn"><a href="#">Получить консультацию</a></div>
+        </div>
     </div>
+
     <div class="banner">
         <div class="banner-inner">
             <div class="white-box">
@@ -118,7 +128,7 @@
         </div>
         <div class="directions wrapper">
             <div class="box">
-                <img src="image/box1.png" alt="Промышленность">
+                <img src="image/box1.png" alt="Промышленность" class="box-img">
                 <div class="box-inner">
                     <div class="box-title">
                         <h3>Промышленность</h3>
@@ -128,12 +138,15 @@
                             нефтехимической, пищевой, горнорудной промышленностей и в сфере производственных машин</p>
                     </div>
                     <div class="btn btn-more">
-                        <a href="">Подробнее</a>
+                        <a href="#">
+                            <p>Подробнее</p>
+                            <img src="image/arrow_red.png" alt="arrow" class="arrow-red">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="box">
-                <img src="image/box2.png" alt="Промышленность">
+                <img src="image/box2.png" alt="Энергетика" class="box-img">
                 <div class="box-inner">
                     <div class="box-title">
                         <h3>Энергетика</h3>
@@ -144,12 +157,15 @@
                             энергоэффективности предприятий.</p>
                     </div>
                     <div class="btn btn-more">
-                        <a href="">Подробнее</a>
+                        <a href="#">
+                            <p>Подробнее</p>
+                            <img src="image/arrow_red.png" alt="arrow" class="arrow-red">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="box">
-                <img src="image/box3.png" alt="Промышленность">
+                <img src="image/box3.png" alt="Индустрия 4.0" class="box-img">
                 <div class="box-inner">
                     <div class="box-title">
                         <h3>Индустрия 4.0</h3>
@@ -160,7 +176,10 @@
                             производства (CAE) и другое.</p>
                     </div>
                     <div class="btn btn-more">
-                        <a href="">Подробнее</a>
+                        <a href="#">
+                            <p>Подробнее</p>
+                            <img src="image/arrow_red.png" alt="arrow" class="arrow-red">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -172,7 +191,7 @@
             </div>
             <div class="progects ">
                 <div class="progect red">
-                    
+                    <div class="progect-img"></div>
                     <div class="progect-inner">
                         <h3 class="progect-inner-h3">АСУ линии холодного копчения рыбы длиной до 25 см, с печью
                             конвейерного типа Н10-ИЛД-4 </h3>
@@ -191,13 +210,16 @@
                         </p>
 
                         <div class="btn btn-more">
-                            <a href="">Подробнее</a>
+                            <a href="#">
+                                <p>Подробнее</p>
+
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="progect black">
-                        
+                    <div class="progect-img"></div>
                     <div class="progect-inner">
                         <h3 class="progect-inner-h3">Разработка программного обеспечение верхнего уровня с
                             корректировкой программы ПЛК АСУТП
@@ -205,7 +227,7 @@
                     </div>
                 </div>
                 <div class="progect red">
-                      
+                    <div class="progect-img"></div>
                     <div class="progect-inner">
                         <h3 class="progect-inner-h3">АСУ цеха ректификации спирта</h3>
                         <p class="progect-inner-p">Заказчик:
@@ -219,12 +241,15 @@
                             • производить централизованную настройку данных приборов при помощи пакета Simatic PDM.
                         </p>
                         <div class="btn btn-more">
-                            <a href="">Подробнее</a>
+                            <a href="#">
+                                <p>Подробнее</p>
+
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="progect red">
-                       
+                    <div class="progect-img"></div>
                     <div class="progect-inner">
                         <h3 class="progect-inner-h3">Система визуализации и мониторинга технологических процессов
                             компрессорного цеха</h3>
@@ -232,7 +257,7 @@
                 </div>
 
                 <div class="progect black">
-                      
+                    <div class="progect-img"></div>
                     <div class="progect-inner">
                         <h3 class="progect-inner-h3">Реконструкция станции регазификации сжиженных углеводородных газов
                             (СУГ) в газонаполнительную
@@ -240,7 +265,7 @@
                     </div>
                 </div>
                 <div class="progect red">
-                        
+                    <div class="progect-img"></div>
                     <div class="progect-inner">
                         <h3 class="progect-inner-h3">Автоматизированная система управления технологическими процессами
                             первичной переработки молока
@@ -353,13 +378,13 @@
             </div>
         </div>
         <div class="map">
-            <img src="image/map.png" alt="">
+
         </div>
     </div>
     </div>
 
     <div class="menu-bottom">
-        <div class="wrapper">
+        <div class="menu-bottom-inner">
             <ul class="nav">
 
                 <li class="nav-item">
@@ -396,19 +421,23 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Индустрия 4.0</a>
-                    <ul class="submenu">
-                        <li><a href="">Отрасли</a></li>
-                        <li><a href="">Решения</a></li>
-                        <li><a href="">Услуги </a></li>
-                    </ul>
-                    <a class="nav-link" href="#">Другое</a>
-                    <ul class="submenu">
-                        <li><a href="">Сертификаты</a></li>
-                        <li><a href="">Проекты</a></li>
-                        <li><a href="">Контакты</a></li>
-                    </ul>
-                </li>
+                    <div>
+                        <a class="nav-link" href="#">Индустрия 4.0</a>
+                        <ul class="submenu">
+                            <li><a href="">Отрасли</a></li>
+                            <li><a href="">Решения</a></li>
+                            <li><a href="">Услуги </a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="nav-link" href="#">Другое</a>
+                        <ul class="submenu">
+                            <li><a href="">Сертификаты</a></li>
+                            <li><a href="">Проекты</a></li>
+                            <li><a href="">Контакты</a></li>
+                    </div>
+            </ul>
+            </li>
             </ul>
         </div>
 
@@ -433,12 +462,82 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script>
     $(".search-btn").click(function () {
-        $(".nav").css("display", "none") &&
-            $(".search-field").css("display", "block") &&
-            $("#search").css("width", "722px");
+        if ($(window).width() > 978) {
+            $(".menu .nav").css("display", "none")
+                && $(".search-row").css({ "max-width": "100%", "width": "100%" })
+                && $(".search-field").css({ "display": "block", "width": "100%", "border": "1px solid grey" })
+                && $("#search").css({ "max-width": "733px", "width": "100%" })
+        }
+        if ($(window).width() < 600) {
+            $('.btn').hide()
+                && $(".nav").css("display", "none")
+                && $(".search-field").css({ "display": "block", "width": "100%", "border": "1px solid grey" })
+                && $("#search").css({ "max-width": "733px", "width": "100%", "margin":"0" })
+                && $(".search-row").css({ "max-width": "90%" })
+        }
+        if ($(window).width() < 500) {
+            $(".search-row").css({ "max-width": "85%" }) 
+        }
+        if ($(window).width() < 400) {
+            $(".search-row").css({ "max-width": "76%" }) 
+            && $(".menu").css({ "padding-top": "25px","padding-bottom": "23px" }) 
+        }
     });
 
+    $(".menu-icon").click(function () {
+        $(".nav").removeClass("display")
+        && $(".menu").css({ "margin": "0" });
+    })
+    $(".close-icon").click(function () {
+        $(".nav").addClass("display")
+        && $(".menu").css({ "margin": "0 17px" });
+    })
 
+
+
+    $('.nav-link').click(function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show');
+            $this.next().slideUp(350);
+            $this.parent().toggleClass('red');
+        } else {
+            $this.parent().parent().find('li .submenu').removeClass('show');
+            $this.parent().parent().find('li .submenu').slideUp(350);
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(350);
+            $this.parent().toggleClass('red');
+        }
+    });
+
+    $('.submenu_a').click(function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show');
+            $this.next().slideUp(350);
+        } else {
+            $this.parent().parent().find('li .sub-submenu').removeClass('show');
+            $this.parent().parent().find('li .sub-submenu').slideUp(350);
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(350);
+        }
+    });
+
+    $('.tab-wrap').click(function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show');
+            $this.next().slideUp(350);
+        } else {
+            $this.parent().parent().find('li .tab').removeClass('show');
+            $this.parent().parent().find('li .tab').slideUp(350);
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(350);
+        }
+    });
 </script>
 
 </html>

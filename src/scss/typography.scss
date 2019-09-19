@@ -1,5 +1,21 @@
 @import "template.scss";
 
+$red: #da251c;
+$black: #000000;
+$white: #ffffff;
+$grey: #dde5e8;
+$menu-color: rgba(86, 86, 86, 0.5);
+$menu-bottom: #bdbdbd;
+$active-color: #565656;
+$Roboto: "Roboto";
+$margin40: 0 40px;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 $Roboto: 'Roboto',sans-serif;;
 $Montserrat:'Montserrat',sans-serif;;
 $text-color:#565656;
@@ -43,6 +59,13 @@ a{
 }
 ul{
     list-style: none;
+}
+p{
+    font-family: $Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
 }
 @media #{$phone} {
     h1{

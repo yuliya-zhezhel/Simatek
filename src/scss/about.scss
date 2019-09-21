@@ -146,6 +146,7 @@
 }
 .mission-bg {
   background: #efefef;
+  margin-bottom: 40px;
   .mission.wrapper {
     margin: 0 auto 55px auto;
     padding: 55px 0;
@@ -439,8 +440,7 @@
         cursor: pointer;
         transition: 0.5s ease;
 
-        &:hover {
-        }
+
       }
       .active {
         display: none;
@@ -463,7 +463,7 @@
       top: -21px;
       color: rgba(64, 64, 64, 0.5);
       transition: all 0.25s ease;
-      -webkit-backface-visibility: hidden;
+
       pointer-events: none;
       font-size: 14px;
       .req {
@@ -511,9 +511,7 @@
     .field-wrap {
       position: relative;
       margin-bottom: 31px;
-      p {
-        // position:absolute;
-      }
+
     }
 
     .button {
@@ -830,12 +828,15 @@
   }
   .advantages .advantages-inner .advantages-mobile ul li,
   .advantages .advantages-inner .advantages-p ul li {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 131.91%;
   }
   .advantages .advantages-inner .advantages-mobile h5,
   .advantages .advantages-inner .advantages-p h5 {
     font-size: 16px;
+  }
+  .advantages .advantages-inner .advantages-img .advantages-mobile p{
+    font-size: 14px;
   }
   .advantages .advantages-inner .advantages-p ul li {
     line-height: 131.91%;
@@ -856,7 +857,7 @@
     border: none;
   }
   .mission-bg .mission.wrapper .mission-box-wrapp .mission-box img {
-    height: 149px;
+    height: 186px;
     margin: 0 0 32px 0;
   }
   .mission-bg .mission.wrapper .mission-box-wrapp .mission-box .mission-box-txt h3 {
@@ -869,14 +870,15 @@
     padding: 44px 0 0 0;
     margin: 0 auto 18px auto;
   }
-  .partners.wrapper .partner-block .partners-first img {
-    height: 178px;
-  }
+
   .partners.wrapper .partners-title {
     margin: 0 17px 17px 17px;
   }
   .partners.wrapper .partner-block .partners-first {
     margin: 0 20px 22px;
+  }
+  .partners.wrapper .partner-block .partners-first img{
+    height: auto;
   }
   .partners.wrapper .partner-block .partners-second {
     max-width: 149px;
@@ -902,6 +904,7 @@
     max-width: 100%;
     width: auto;
   }
+  
   .contact-form .form-wrap .form-inner .form {
     padding: 0 17px;
   }
@@ -956,6 +959,7 @@
     max-width: 100%;
     padding: 32px 36px 25px 34px;
   }
+  
   .contact-form .contact-form-img {
     display: none;
   }

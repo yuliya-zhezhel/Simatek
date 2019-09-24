@@ -832,9 +832,9 @@ body {
 }
 
 /* sklad */
-#sklad{
-  .contact-info-bg{
-    display:none;
+#sklad {
+  .contact-info-bg {
+    display: none;
   }
 }
 .sklad {
@@ -901,6 +901,80 @@ body {
     }
   }
 }
+
+/* partners-page */
+
+.partners-page {
+  max-width: 959px;
+  width: 100%;
+  margin: 29px auto 97px auto;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+  }
+}
+.partner-page {
+  border: 1px solid grey;
+  width: 217px;
+  height: 145px;
+  margin: 9px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  img {
+    width: 150px;
+  }
+  .btn-more {
+    display: none;
+    border: 1px solid white;
+    position: absolute;
+    z-index: 10;
+    padding: 10px 0px;
+    a {
+      color: $white;
+      padding: 10px 20px;
+    }
+  }
+  &:hover {
+    .btn-more {
+      display: block;
+      &:hover{
+        background: $red;
+        border:1px solid $red;
+      }
+    }
+    &:after {
+      content: "";
+      background: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+}
+.wide {
+  max-width: 455px;
+  width: 100%;
+  
+  img {
+    max-width: 337px;
+    width: 100%;
+  }
+}
+
+.tall {
+  height: 310px;
+}
+
 @media #{$tablet} {
   body {
     .wrapper-main .content {
@@ -1203,7 +1277,24 @@ body {
       margin: 0 0 57px 0;
     }
   }
+  /*   partners */
+  .partners-page {
+    margin: 29px 40px 97px 40px;
+    max-width: 100%;
+    width: auto;
+    .grid {
+      margin: 0 auto;
+      display: inline-block;
+      max-width: 718px;
+    }
+
+  }
+  .wide {
+    max-width: 691px;
+    width: 100%;
+  }
 }
+
 @media screen and (max-width: 885px) {
   .sklad .download-buttons {
     margin: 0 0 55px 0;
@@ -1223,6 +1314,29 @@ body {
       }
     }
   }
+  /*partners*/
+  .wide {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .partners-page{
+    margin: 17px 40px 97px 40px;
+  }
+  .partner-page{
+    margin: 4px;
+  }
+  .wide {
+    max-width: 673px;
+    width: 100%;
+    img {
+      max-width: 506px;
+  }
+}
+.tall {
+  height: 452px;
+}
 }
 @media screen and (max-width: 750px) {
   .sklad .download-buttons .download-btn {
@@ -1232,6 +1346,7 @@ body {
       right: -33px;
     }
   }
+
 }
 @media screen and (max-width: 715px) {
   body {
@@ -1262,6 +1377,20 @@ body {
       }
     }
   }
+  /*   partners */
+  .partners-page .grid{
+    max-width: 454px;
+  }
+  .wide {
+    max-width: 444px;
+    width: 100%;
+   img {
+      max-width: 356px;
+  }
+}
+  .tall {
+    height: 287px;
+}
 }
 @media screen and(max-width: 615px) {
   body .wrapper-main .content .menu-bottom {
@@ -1491,6 +1620,22 @@ body {
     .footer .menu-bottom .nav .nav-item:last-child {
       margin: 0 0px 0 auto;
     }
+  }
+  .partner-page {
+    max-width: 200px;
+    height: 109px;
+    img {
+      max-width: 115px;
+    }
+  }
+  .wide {
+    max-width: 413px;
+    img{
+      max-width: 315px;
+    }
+  }
+  .tall {
+    height: 240px;
   }
 }
 @media #{$phone} {
@@ -1749,37 +1894,65 @@ body {
         display: none;
       }
     }
-    #sklad{
-      .contact-info-bg{
-        display:block;
+    #sklad {
+      .contact-info-bg {
+        display: block;
       }
     }
     .sklad {
       margin: 17px 0px 0 0px;
-      h1{
+      h1 {
         font-size: 20px;
         margin: 0 0 15px 19px;
       }
-      img{
+      img {
         height: 178px;
         margin: 0 0 39px 0;
       }
       .download-buttons {
-      flex-direction: column;
-      margin: 0;
-      .download-btn {
-        width: 172px;
-        margin: 0 auto 40px auto;
-        padding: 19px 52px 19px 32px;
-        p{
-          max-width: 172px;
+        flex-direction: column;
+        margin: 0;
+        .download-btn {
+          width: 172px;
+          margin: 0 auto 40px auto;
+          padding: 19px 52px 19px 32px;
+          p {
+            max-width: 172px;
+          }
         }
       }
     }
-  }
 
     .footer .menu-bottom {
       display: none;
+    }
+  }
+  .partners-page .grid{
+    max-width: 325px;
+  }
+  .partners-page {
+    margin: 19px 20px 13px 20px;
+    h1{
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+  }
+  .partner-page {
+    max-width: 143px;
+    height: 96px;
+    margin: 0 0 30px 0;
+    img {
+      width: 94px;
+    }
+    &:nth-child(2n){
+      margin: 0px 30px 30px 0;
+    }
+  }
+  .wide {
+    max-width: 323px;
+    height: 214px;
+    img{
+      width: 238px;
     }
   }
 }

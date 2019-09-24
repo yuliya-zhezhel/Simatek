@@ -645,7 +645,7 @@
   }
   .mission-bg .mission.wrapper {
     .mission-title {
-      margin: 0 40px 45px 40px;
+      margin: 0 0 45px 0px;
       h2 {
         margin: 0 0 43px 0;
       }
@@ -653,6 +653,9 @@
         max-width: 672px;
       }
     }
+  }
+  .mission-bg .mission.wrapper .mission-box-wrapp .mission-box .mission-box-txt h3 {
+    height: 100px;
   }
   .btn-see {
     padding: 15px 40px;

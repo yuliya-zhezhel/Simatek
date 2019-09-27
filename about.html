@@ -38,9 +38,9 @@
                             <img src="image/logo.png" alt="logo">
                         </div>
                         <div class="beidge">
-                            <img src="image/partner.png" alt="partner">
-                            <img src="image/partner2.jpg" alt="partner">
-                            <img src="image/partner.png" alt="partner">
+                            <img src="image/partner.svg" alt="partner">
+                            <img src="image/partner2.svg" alt="partner">
+                            <img src="image/partner.svg" alt="partner">
                         </div>
                     </div>
                 </div>
@@ -655,13 +655,13 @@
         if ($(window).width() > 978) {
             $(".menu .nav").css("display", "none")
                 && $(".search-row").css({ "max-width": "100%", "width": "100%" })
-                && $(".search-field").css({ "display": "block", "width": "100%", "border": "1px solid grey" })
+                && $(".search-field").css({ "display": "block", "width": "100%", "border": "1px solid #DDE5E8" })
                 && $("#search").css({ "max-width": "733px", "width": "100%" })
         }
         if ($(window).width() < 600) {
             $('.btn').hide()
                 && $(".nav").css("display", "none")
-                && $(".search-field").css({ "display": "block", "width": "100%", "border": "1px solid grey" })
+                && $(".search-field").css({ "display": "block", "width": "100%", "border": "1px solid #DDE5E8" })
                 && $("#search").css({ "max-width": "733px", "width": "100%", "margin": "0" })
                 && $(".search-row").css({ "max-width": "90%" })
         }
@@ -686,6 +686,7 @@
 
 
     $('.nav-link').click(function (e) {
+        if ($(window).width() < 600) {
         e.preventDefault();
         var $this = $(this);
         if ($this.next().hasClass('show')) {
@@ -699,9 +700,11 @@
             $this.next().slideToggle(350);
             $this.parent().toggleClass('red');
         }
+    }
     });
 
     $('.submenu_a').click(function (e) {
+        if ($(window).width() < 600) {
         e.preventDefault();
         var $this = $(this);
         if ($this.next().hasClass('show')) {
@@ -713,9 +716,11 @@
             $this.next().toggleClass('show');
             $this.next().slideToggle(350);
         }
+    }
     });
 
     $('.tab-wrap').click(function (e) {
+        if ($(window).width() < 600) {
         e.preventDefault();
         var $this = $(this);
         if ($this.next().hasClass('show')) {
@@ -727,6 +732,7 @@
             $this.next().toggleClass('show');
             $this.next().slideToggle(350);
         }
+    }
     });
 </script>
 

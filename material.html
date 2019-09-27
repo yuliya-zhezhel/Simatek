@@ -111,58 +111,211 @@
                     <div class="btn"><a href="#">Получить консультацию</a></div>
                 </div>
             </div>
-            <div class="partners-page">
-                <h1>Партнеры</h1>
+            <div class="material">
+                <h1>Материалы</h1>
+                <!-- Tab links -->
+                <div class="tab">
+                    <button class="tablinks active" onclick="openCity(event, 'doc')">Документы</button>
+                    <button class="tablinks" onclick="openCity(event, 'photo')">Фото</button>
+                    <button class="tablinks" onclick="openCity(event, 'video')">Видео</button>
+                </div>
 
-
-                <div class="grid">
-                    <div class="partner-page wide tall">
-                        <img src="image/partners/partner1.png" alt="">
-                        <div class="btn-more"><a href="#">Подробнее</a></div>
+                <!-- Tab content -->
+                <div id="doc" class="tabcontent" style="display: flex;">
+                    <div class="material-search">
+                        <div id="search">
+                            <input type="text" placeholder="Поиск по сайту" class="search-field">
+                            <div class="search-btn"><img src="image/search.png" alt="search"></div>
+                        </div>
+                        <div class="doc-wrapp">
+                            <div class="doc">
+                                <img src="image/pdf.png" alt="">
+                                <p>Электротехнические шкафы автоматики для управления работой различных систем.pdf</p>
+                            </div>
+                            <div class="doc">
+                                <img src="image/pdf.png" alt="">
+                                <p>Электротехнические шкафы автоматики для управления работой различных систем.pdf</p>
+                            </div>
+                            <div class="doc">
+                                <img src="image/pdf.png" alt="">
+                                <p>Электротехнические шкафы автоматики для управления работой различных систем.pdf</p>
+                            </div>
+                            <div class="doc">
+                                <img src="image/pdf.png" alt="">
+                                <p>Электротехнические шкафы автоматики для управления работой различных систем.pdf</p>
+                            </div>
+                            <div class="doc">
+                                <img src="image/pdf.png" alt="">
+                                <p>Электротехнические шкафы автоматики для управления работой различных систем.pdf</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="partner-page">
-                        <img src="image/partners/partner2.png" alt="">
-                        <div class="btn-more"><a href="#">Подробнее</a></div>
-                    </div>
-                    <div class="partner-page">
-                        <img src="image/partners/partner3.png" alt="">
-                        <div class="btn-more"><a href="#">Подробнее</a></div>
-                    </div>
-                    <div class="partner-page">
-                        <img src="image/partners/partner4.png" alt="">
-                        <div class="btn-more"><a href="#">Подробнее</a></div>
-                    </div>
-                    <div class="partner-page">
-                        <img src="image/partners/partner5.png" alt="">
-                        <div class="btn-more"><a href="#">Подробнее</a></div>
-                    </div>
-                    <div class="partner-page">
-                        <img src="image/partners/partner6.png" alt="">
-                        <div class="btn-more"><a href="#">Подробнее</a></div>
-                    </div>
-                    <div class="partner-page">
-                        <img src="image/partners/partner7.png" alt="">
-                        <div class="btn-more"><a href="#">Подробнее</a></div>
-                    </div>
-                    <div class="partner-page">
-                        <img src="image/partners/partner.svg" alt="">
-                        <div class="btn-more"><a href="#">Подробнее</a></div>
-                    </div>
-                    <div class="partner-page">
-                        <img src="image/partners/partner8.png" alt="">
-                        <div class="btn-more"><a href="#">Подробнее</a></div>
-                    </div>
-                    <div class="partner-page">
-                        <img src="image/partners/partner9.png" alt="">
-                        <div class="btn-more"><a href="#">Подробнее</a></div>
-                    </div>
-                    <div class="partner-page">
-                        <img src="image/partners/partner10.png" alt="">
-                        <div class="btn-more"><a href="#">Подробнее</a></div>
+                    <div class="pagination-wrapp">
+                        <ul class="pagination modal-2">
+                            <li><a href="#" class="prev"></a></li>
+                            <li><a href="#">1</a></li>
+                            <li> <a href="#">2</a></li>
+                            <li> <a href="#" class="active">3</a></li>
+                            <li> <a href="#">4</a></li>
+                            <li> <a href="#">5</a></li>
+                            <li> <a href="#">6</a></li>
+                            <li> <a href="#">7</a></li>
+                            <li> <a href="#">8</a></li>
+                            <li> <a href="#">9</a></li>
+                            <li><a href="#" class="next"></a></li>
+                        </ul><br>
                     </div>
                 </div>
 
+                <div id="photo" class="tabcontent" >
+                    <div class="material-search">
+                        <div id="search">
+                            <input type="text" placeholder="Поиск по сайту" class="search-field">
+                            <div class="search-btn"><img src="image/search.png" alt="search"></div>
+                        </div>
+                        <div class="photo-wrapp">
+                            <div class="photo">
+                                <div class="photo-img">
+                                    <img src="image/mater.png" alt="" data-js="open">
+                                </div>
+                                <p>Выставка тибо 2019 фото фото фото
+                                </p>
+                                <div class="popup">
+                                    <div class="photo-popup">
+                                        <div class="photo-img">
+                                            <img src="image/mater.png" alt="">
+                                        </div>
+                                        <p>Выставка тибо 2019 фото фото фото
+                                        </p>
+                                        <button name="close" class="close"></button>
+                                    </div>
 
+
+                                </div>
+                            </div>
+                            <div class="photo">
+                                <div class="photo-img">
+                                    <img src="image/mater.png" alt="">
+                                </div>
+                                <p>Выставка тибо 2019 фото фото фото
+                                </p>
+                            </div>
+                            <div class="photo">
+                                <div class="photo-img">
+                                    <img src="image/mater.png" alt="">
+                                </div>
+                                <p>Выставка тибо 2019 фото фото фото
+                                </p>
+                            </div>
+                            <div class="photo">
+                                <div class="photo-img">
+                                    <img src="image/mater.png" alt="">
+                                </div>
+                                <p>Выставка тибо 2019 фото фото фото
+                                </p>
+                            </div>
+                            <div class="photo">
+                                <div class="photo-img">
+                                    <img src="image/mater.png" alt="">
+                                </div>
+                                <p>Выставка тибо 2019 фото фото фото
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-wrapp">
+                        <ul class="pagination modal-2">
+                            <li><a href="#" class="prev"></a></li>
+                            <li><a href="#">1</a></li>
+                            <li> <a href="#">2</a></li>
+                            <li> <a href="#" class="active">3</a></li>
+                            <li> <a href="#">4</a></li>
+                            <li> <a href="#">5</a></li>
+                            <li> <a href="#">6</a></li>
+                            <li> <a href="#">7</a></li>
+                            <li> <a href="#">8</a></li>
+                            <li> <a href="#">9</a></li>
+                            <li><a href="#" class="next"></a></li>
+                        </ul><br>
+                    </div>
+                </div>
+
+                <div id="video" class="tabcontent">
+                        <div class="material-search">
+                                <div id="search">
+                                    <input type="text" placeholder="Поиск по сайту" class="search-field">
+                                    <div class="search-btn"><img src="image/search.png" alt="search"></div>
+                                </div>
+                                <div class="video-wrapp">
+                                    <div class="video">
+                                        <div class="video-img">
+                                            <img src="image/mater.png" alt="" data-js="open">
+                                        </div>
+                                        <p>Видео-презентация новой линейки Simatek
+                                        </p>
+
+                                    </div>
+                                    <div class="video">
+                                        <div class="video-img">
+                                            <img src="image/mater.png" alt="">
+                                        </div>
+                                        <p>Выставка тибо 2019 фото фото фото
+                                        </p>
+                                    </div>
+                                    <div class="video">
+                                        <div class="video-img">
+                                            <img src="image/mater.png" alt="">
+                                        </div>
+                                        <p>Выставка тибо 2019 фото фото фото
+                                        </p>
+                                    </div>
+                                    <div class="video">
+                                        <div class="video-img">
+                                            <img src="image/mater.png" alt="">
+                                        </div>
+                                        <p>Выставка тибо 2019 фото фото фото
+                                        </p>
+                                    </div>
+                                    <div class="video">
+                                        <div class="video-img">
+                                            <img src="image/mater.png" alt="">
+                                        </div>
+                                        <p>Выставка тибо 2019 фото фото фото
+                                        </p>
+                                    </div>
+                                    <div class="video">
+                                            <div class="video-img">
+                                                <img src="image/mater.png" alt="">
+                                            </div>
+                                            <p>Выставка тибо 2019 фото фото фото
+                                            </p>
+                                        </div>
+                                        <div class="video">
+                                                <div class="video-img">
+                                                    <img src="image/mater.png" alt="">
+                                                </div>
+                                                <p>Выставка тибо 2019 фото фото фото
+                                                </p>
+                                            </div>
+                                            
+                                </div>
+                            </div>
+                            <div class="pagination-wrapp">
+                                <ul class="pagination modal-2">
+                                    <li><a href="#" class="prev"></a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li> <a href="#">2</a></li>
+                                    <li> <a href="#" class="active">3</a></li>
+                                    <li> <a href="#">4</a></li>
+                                    <li> <a href="#">5</a></li>
+                                    <li> <a href="#">6</a></li>
+                                    <li> <a href="#">7</a></li>
+                                    <li> <a href="#">8</a></li>
+                                    <li> <a href="#">9</a></li>
+                                    <li><a href="#" class="next"></a></li>
+                                </ul><br>
+                            </div>
+                </div>
             </div>
             <div class="contact-info-bg">
                 <div class="contact-info">
@@ -283,102 +436,76 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script>
 
-    jQuery(document).ready(function () {
+    function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
 
-        const activate = function name(prefex) {
-
-            const tab = '.tab-' + prefex;
-            $(tab).addClass('active');
-            $(tab).siblings().toggleClass('active');
-
-            const content = '#' + prefex;
-            const avoid = $(".tab-group");
-            avoid.children().toggleClass('active');
-            $(content).siblings().not(avoid).hide();
-
-            $(content).fadeIn(600);
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
         }
 
-        $('#next, #submit').on('click', function (e) {
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
 
-            var isValid = true;
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "flex";
+        evt.currentTarget.className += " active";
+    }
 
-            if (!$("#name")[0].checkValidity()) {
-                $("#name_error").css("display", "flex");
-                isValid = false;
-            } else {
-                $("#name_error").hide();
-            }
 
-            if (!$("#family")[0].checkValidity()) {
-                $("#family_error").css("display", "flex");
-                isValid = false;
-            } else {
-                $("#family_error").hide();
-            }
 
-            if (!$("#email")[0].checkValidity()) {
-                $("#email_error").css("display", "flex");
-                isValid = false;
-            } else {
-                $("#email_error").hide();
-            }
 
-            if (!$("#number")[0].checkValidity()) {
-                $("#number_error").css("display", "flex");
-                isValid = false;
-            } else {
-                $("#number_error").hide();
-            }
 
-            e.preventDefault();
+    /* photo popup */
+    function popupOpenClose(popup) {
 
-            if (isValid) {
-                activate("second");
+        /* Add div inside popup for layout if one doesn't exist */
+        if ($(".wrapper").length == 0) {
+            $(popup).wrapInner("<div class='wrapper'></div>");
+        }
+
+        /* Open popup */
+        $(popup).show();
+
+        /* Close popup if user clicks on background */
+        $(popup).click(function (e) {
+            if (e.target == this) {
+                if ($(popup).is(':visible')) {
+                    $(popup).hide();
+                }
             }
         });
 
-
-        $('#back').on('click', function (e) {
-            e.preventDefault();
-            activate("first");
-        });
-
-        $('#submit').on('click', function (e) {
-            var isValid = true;
-
-            if (isValid) {
-                // do something
-            } else {
-                e.preventDefault();
+        /* Close popup and remove errors if user clicks on cancel or close buttons */
+        $(popup).find("button[name=close]").on("click", function () {
+            if ($(".formElementError").is(':visible')) {
+                $(".formElementError").remove();
             }
+            $(popup).hide();
+        });
+    }
+
+    $(document).ready(function () {
+        $("[data-js=open]").on("click", function () {
+            popupOpenClose($(".popup"));
         });
     });
-
-
-
-
-    $('.tab a').on('click', function (e) {
-
-        // e.preventDefault();
-
-        console.log($(this));
-
-        // $(this).parent().addClass('active');
-        // $(this).parent().siblings().toggleClass('active');
-
-        // target = $(this).attr('href');
-
-        // $('.tab-content > div').not(target).hide();
-
-        // $(target).fadeIn(600);
-
-    });
-
 </script>
 
 <script>
-    $(".search-btn").click(function () {
+    /* material search */
+    $(".material-search .search-btn").click(function () {
+        if ($(window).width() > 978) {
+            $(".material-search .search-field").css({ "opacity": "1", "border": "1px solid #DDE5E8" })
+        }
+    });
+    /* header menu */
+    $(".menu .search-btn").click(function () {
         if ($(window).width() > 978) {
             $(".menu .nav").css("display", "none")
                 && $(".search-row").css({ "max-width": "100%", "width": "100%" })

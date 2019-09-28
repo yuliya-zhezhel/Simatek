@@ -8,7 +8,6 @@ $darkred: #B91E16;
 $menu-color: rgba(86, 86, 86, 0.5);
 $menu-bottom: #bdbdbd;
 $active-color: #565656;
-$Roboto: "Roboto";
 $margin40: 0 40px;
 * {
   margin: 0;
@@ -17,26 +16,66 @@ $margin40: 0 40px;
 
 
 
-$Roboto: 'Roboto',sans-serif;;
-$Montserrat:'Montserrat',sans-serif;;
+$Roboto: 'robotoregular',sans-serif;
+$Montserrat:'montserratregular',sans-serif;
 $text-color:#565656;
 $h1:#000000;
 $h2:#000000;
 $h3:#000000;
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular.eot');
+    src: url('roboto-regular.eot?#iefix') format('embedded-opentype'),
+         url('roboto-regular.woff2') format('woff2'),
+         url('roboto-regular.woff') format('woff'),
+         url('roboto-regular.ttf') format('truetype'),
+         url('roboto-regular.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular.eot');
+    src: url('montserrat-regular.eot?#iefix') format('embedded-opentype'),
+         url('montserrat-regular.woff2') format('woff2'),
+         url('montserrat-regular.woff') format('woff'),
+         url('montserrat-regular.ttf') format('truetype'),
+         url('montserrat-regular.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat-bold.eot');
+    src: url('montserrat-bold.eot?#iefix') format('embedded-opentype'),
+         url('montserrat-bold.woff2') format('woff2'),
+         url('montserrat-bold.woff') format('woff'),
+         url('montserrat-bold.ttf') format('truetype'),
+         url('montserrat-bold.svg#montserratbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+    
 h1 {
 
  color: $h1;
  font-family: $Montserrat;
-font-style: normal;
-font-weight: 500;
+ font-weight: bold;
+ font-style: normal;
 font-size: 18px;
 line-height: 24px;
 }
 
 h2{
 font-family: $Montserrat;
+font-weight: bold;
 font-style: normal;
-font-weight: 600;
 font-size: 24px;
 line-height: 29px;
 text-transform: uppercase;
@@ -47,7 +86,7 @@ letter-spacing: 0.2px;
 h3{    
 font-family: $Montserrat;
 font-style: normal;
-font-weight: 400;
+font-weight: normal;
 font-size: 24px;
 line-height: 32px;
 color:$h3;

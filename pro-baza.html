@@ -433,18 +433,22 @@
         }
     }
     });
-
+    
     $('.submenu_a').click(function (e) {
         if ($(window).width() < 600) {
         e.preventDefault();
         var $this = $(this);
         if ($this.next().hasClass('show')) {
             $this.next().removeClass('show');
+            $this.children().removeClass('active');
             $this.next().slideUp(350);
         } else {
+            console.log($this);
             $this.parent().parent().find('li .sub-submenu').removeClass('show');
+            $this.children().toggleClass('active');
             $this.parent().parent().find('li .sub-submenu').slideUp(350);
             $this.next().toggleClass('show');
+
             $this.next().slideToggle(350);
         }
     }

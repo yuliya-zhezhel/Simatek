@@ -90,7 +90,7 @@ body {
             margin: 0 0 0 auto;
             display: flex;
             flex-direction: row;
-            max-width: 34px;
+            max-width: 44px;
             width: 100%;
             align-items: center;
             justify-content: space-between;
@@ -103,6 +103,7 @@ body {
               text-align: right;
               text-decoration: underline;
               color: #bdbdbd;
+             
               &.active {
                 text-decoration: none;
                 color: #fff;
@@ -183,7 +184,7 @@ body {
       .wrapper {
         max-width: 945px;
         margin: 0 auto;
-
+width: 100%;
         &.flex {
           display: flex;
           flex-direction: row;
@@ -774,7 +775,7 @@ body {
               }
               .btn-more {
                 border: 2px solid $red;
-                padding: 5px 0px 9px 0px;
+                padding: 7px 0px 7px 0px;
                 &:hover {
                   border: 2px solid $black;
                 }
@@ -1102,14 +1103,14 @@ body {
 }
 /* material */
 /* Style the tab */
-.tab {
+.tab-material {
   overflow: hidden;
   margin: 0 0 16px 0;
   display: flex;
   justify-content: space-between;
   z-index: 0;
   position: relative;
-  d
+
   &:after {
     content: "";
     width: 100%;
@@ -1122,7 +1123,7 @@ body {
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab button {
+.tab-material button {
   background-color: inherit;
   float: left;
   border: none;
@@ -1133,7 +1134,7 @@ body {
   width: 33%;
   font-family: $Montserrat;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 134.09%;
   text-align: center;
@@ -1155,7 +1156,7 @@ body {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab-material button:hover {
   color: $red;
 }
 
@@ -1244,23 +1245,32 @@ body {
         justify-content: center;
         align-items: center;
         img {
+          cursor: pointer;
           max-width: 100%;
           position: relative;
         }
+        .eye{
+         display: none;
+         width: 40px;
+        }
         &:hover {
-          &:after {
-            content: "";
-            background: url(../image/eye.png) no-repeat center;
-            background-size: cover;
-            height: 40px;
-            width: 40px;
+          .eye{
+            display: flex;
             position: absolute;
-            bottom: 0;
-            top: 64px;
-
-            cursor: pointer;
-
-            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+          }
+          &:after {
+            // content: "";
+            // background: url(../image/eye.png) no-repeat center;
+            // background-size: cover;
+            // height: 40px;
+            // width: 40px;
+            // position: absolute;
+            // bottom: 0;
+            // top: 64px;
+            // cursor: pointer;
+            // margin: 0 auto;
           }
         }
       }
@@ -1827,7 +1837,7 @@ body {
             &:last-child {
               display: flex;
               margin: 0 65px 0 auto;
-              max-width: 54%;
+              max-width: 53%;
               width: 100%;
               justify-content: space-between;
               .submenu {
@@ -2103,7 +2113,6 @@ body {
               .tri {
                 width: 3px;
                 height: 3px;
-
                 margin: 0 0 0 20px;
               }
 
@@ -2143,6 +2152,7 @@ body {
                 border-color: #DDE5E8 transparent transparent transparent;
                 transform: rotate(-90deg);
                 margin: 0 0 0 20px;
+                transition: all 0.2s ease;
                 &.active{
                   transform: rotate(0deg)
                 }

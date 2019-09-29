@@ -177,8 +177,7 @@
           }
           ul {
             li {
-              display: flex;
-              padding: 0 0 5px 14px;
+              padding: 0 0 5px 0px;
               align-items: flex-start;
               position: relative;
               color: $active-color;
@@ -187,6 +186,7 @@
               font-size: 16px;
               line-height: 128.9%;
               font-family: $Roboto;
+              text-indent: 1em;
               &::before {
                 content: "";
                 height: 5px;

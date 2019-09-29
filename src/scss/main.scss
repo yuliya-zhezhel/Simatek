@@ -930,31 +930,27 @@ width: 100%;
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      position: relative;
       p {
         text-align: center;
-        position: relative;
         font-size: 18px;
-        &:after {
-          content: "";
-          background: url(../image/download.png) no-repeat center;
-          background-size: cover;
-          height: 20px;
-          width: 20px;
-          position: absolute;
-          top: -1px;
-          right: -54px;
-        }
+      }
+      &:after {
+        content: "";
+        background: url(../image/download.png) no-repeat center;
+        background-size: cover;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
       }
       &:hover {
         border: 1px solid #818c92;
-        p:after {
+        &:after {
           background: url(../image/download-active.png) no-repeat center;
           background-size: cover;
-          height: 20px;
-          width: 20px;
-          position: absolute;
-          top: -1px;
-          right: -54px;
+
         }
       }
     }
@@ -964,7 +960,7 @@ width: 100%;
 /* partners-page */
 
 .partners-page {
-  max-width: 959px;
+  max-width: 964px;
   width: 100%;
   margin: 29px auto 97px auto;
   display: flex;
@@ -976,14 +972,14 @@ width: 100%;
     font-size: 24px;
     line-height: 29px;
     text-transform: uppercase;
-    margin-bottom: 36px;
+    margin: 0 0 36px 10px;
   }
 }
 .partner-page {
-  border: 1px solid grey;
+  border: 1px solid $grey;
   width: 217px;
   height: 145px;
-  margin: 9px;
+  margin: 11px;
   float: left;
   display: flex;
   justify-content: center;
@@ -1070,11 +1066,12 @@ width: 100%;
         margin: 0 0 9px 0;
       }
       ul {
-        list-style: inside;
+        
 
         li {
           margin: 0 0 8px 0;
           position: relative;
+          text-indent: 1em;
           &:before {
             content: "";
             height: 5px;
@@ -1897,6 +1894,15 @@ width: 100%;
         padding: 0;
       }
     }
+  }
+  .partner-page{
+    margin: 10px;
+  }
+  .partner-page:hover .btn-more{
+    display: none;
+  }
+  .partner-page:hover:after{
+    background: #acacace6;
   }
 }
 

@@ -15,15 +15,15 @@
     justify-content: center;
     align-items: center;
     padding: 7px 32px;
-  
-  &:hover {
-    background: $black;
-    border: 2px solid $black;
-  }
+
+    &:hover {
+      background: $black;
+      border: 2px solid $black;
+    }
   }
   &.see-all {
     margin: 0 0 55px 0;
-       display: inline-block;   
+    display: inline-block;
     a {
       font-size: 18px;
       line-height: 23px;
@@ -103,7 +103,7 @@ body {
               text-align: right;
               text-decoration: underline;
               color: #bdbdbd;
-             
+
               &.active {
                 text-decoration: none;
                 color: #fff;
@@ -164,7 +164,8 @@ body {
               max-width: 422px;
               width: 100%;
               letter-spacing: 0.2px;
-              font-weight: normal;
+font-weight: bold;
+              font-family: $Montserrat;
             }
             .btn-red {
               margin-bottom: 29px;
@@ -184,7 +185,7 @@ body {
       .wrapper {
         max-width: 945px;
         margin: 0 auto;
-width: 100%;
+        width: 100%;
         &.flex {
           display: flex;
           flex-direction: row;
@@ -225,29 +226,28 @@ width: 100%;
               .submenu {
                 display: block;
               }
-              .nav-link{
+              .nav-link {
                 color: #565656;
 
                 &:after {
-                border-bottom: 2px solid $red;
+                  border-bottom: 2px solid $red;
+                }
               }
             }
-          }
             .nav-link {
               color: #bdbdbd;
-              font-family: "robotoregular",sans-serif;
+              font-family: "robotoregular", sans-serif;
               font-style: normal;
               font-weight: normal;
               font-size: 14px;
               line-height: 24px;
               &:hover {
-                
                 &:after {
                   border-bottom: 2px solid $red;
                 }
               }
               &:after {
-                content: "";         
+                content: "";
                 width: 100%;
                 height: 2px;
                 position: absolute;
@@ -402,10 +402,10 @@ width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                p{
+                p {
                   font-size: 14px;
                 }
-                a{
+                a {
                   padding: 7px 17px;
                 }
                 &:hover {
@@ -487,7 +487,6 @@ width: 100%;
                   font-size: 14px;
                   line-height: 16px;
                 }
-
               }
             }
             &:first-child {
@@ -851,8 +850,8 @@ width: 100%;
               font-weight: normal;
               font-size: 16px;
               line-height: 24px;
-              &:hover{
-                color:$red;
+              &:hover {
+                color: $red;
               }
             }
           }
@@ -902,7 +901,7 @@ width: 100%;
   display: flex;
   flex-direction: column;
   h1 {
-    font-family: $Montserrat;
+    font-family: $Montserratsemibold;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -950,7 +949,6 @@ width: 100%;
         &:after {
           background: url(../image/download-active.png) no-repeat center;
           background-size: cover;
-
         }
       }
     }
@@ -966,7 +964,7 @@ width: 100%;
   display: flex;
   flex-direction: column;
   h1 {
-    font-family: $Montserrat;
+    font-family: $Montserratsemibold;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1037,7 +1035,7 @@ width: 100%;
   display: flex;
   flex-direction: column;
   h1 {
-    font-family: $Montserrat;
+    font-family: $Montserratsemibold;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1066,8 +1064,6 @@ width: 100%;
         margin: 0 0 9px 0;
       }
       ul {
-        
-
         li {
           margin: 0 0 8px 0;
           position: relative;
@@ -1129,7 +1125,7 @@ width: 100%;
   padding: 14px 16px;
   transition: 0.3s;
   width: 33%;
-  font-family: $Montserrat;
+  font-family: $MontserratMedium;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1246,12 +1242,12 @@ width: 100%;
           max-width: 100%;
           position: relative;
         }
-        .eye{
-         display: none;
-         width: 40px;
+        .eye {
+          display: none;
+          width: 40px;
         }
         &:hover {
-          .eye{
+          .eye {
             display: flex;
             position: absolute;
             justify-content: center;
@@ -1497,13 +1493,13 @@ width: 100%;
     a {
       float: left;
       display: block;
-      font-size: 14px;
+      font-size: 12px;
       text-decoration: none;
-      padding: 2px 9px;
+      padding: 0px 3px;
       color: #fff;
-      margin-left: -1px;
+      margin-left: 0px;
       border: 1px solid transparent;
-      line-height: 1.5;
+      line-height: 1.2;
       &.active {
         cursor: default;
       }
@@ -1526,15 +1522,25 @@ width: 100%;
     }
     a {
       color: #999;
+      position: relative;
       &:hover {
         color: $red;
       }
       &.active,
       &:active {
-        border-color: $red;
-        background: $red;
-        color: #fff;
-        border-radius: 50%;
+        color: $white;
+        z-index: 1;
+        &:after {
+          content: "";
+          width: 16px;
+          height: 16px;
+          background: #da251c;
+          border-radius: 50%;
+          position: absolute;
+          left: -2px;
+          top: 0px;
+          z-index: -3;
+        }
       }
     }
   }
@@ -1546,7 +1552,7 @@ width: 100%;
   display: flex;
   flex-direction: column;
   h1 {
-    font-family: "Montserrat", sans-serif;
+    font-family: $Montserratsemibold;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1619,7 +1625,7 @@ width: 100%;
               padding: 24px 15px 23px 39px;
               .btn-more {
                 margin: 0 24px 0 auto;
-                p{
+                p {
                   font-size: 14px;
                 }
               }
@@ -1895,17 +1901,142 @@ width: 100%;
       }
     }
   }
-  .partner-page{
+  .partner-page {
     margin: 10px;
   }
-  .partner-page:hover .btn-more{
+  .partner-page:hover .btn-more {
     display: none;
   }
-  .partner-page:hover:after{
+  .partner-page:hover:after {
     background: #acacace6;
   }
 }
+/* events */
+.line {
+  width: 100%;
+  height: 3px;
+  background: $grey;
+  margin: 0 0 16px 0;
+}
+.breadscrums {
+  max-width: 946px;
+  margin: 0 auto;
+  font-family: $Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0 auto 24px auto;
+  color: #565656;
+}
+.events-page {
+  max-width: 946px;
+  margin: 0 auto 60px auto;
+  h1 {
+    font-family: $Montserratsemibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
 
+    margin: 0 0 57px 0;
+  }
+  .event {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 0 26px;
+    padding: 0 0 14px;
+    .date {
+      max-width: 87px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .number {
+        font-family: $Montserratsemibold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 76px;
+        line-height: 60px;
+        text-transform: uppercase;
+      }
+      .month {
+        font-family: $Montserratsemibold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: #000000;
+      }
+      .week {
+        font-family: $Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 120%;
+        color: #808285;
+      }
+    }
+    .event-description {
+      margin: 0 0 0 87px;
+      .event-description-header {
+        font-family: $MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 120%;
+        color: #000000;
+        margin: 0 0 18px 0;
+      }
+      .event-description-date {
+        display: flex;
+        flex-direction: column;
+        font-family: $Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 120%;
+        color: #565656;
+        margin: 0 0 18px 0;
+      }
+      .event-calendar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 185px;
+
+        width: 100%;
+        .event-calendar-link {
+          font-family: $Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 120%;
+          /* or 14px */
+
+          text-decoration-line: underline;
+
+          color: #da251c;
+        }
+        img {
+          max-width: 20px;
+        }
+      }
+    }
+    &:after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: $grey;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
 @media screen and (max-width: 885px) {
   .sklad .download-buttons {
     margin: 0 0 55px 0;
@@ -2155,12 +2286,12 @@ width: 100%;
                 height: 0;
                 border-style: solid;
                 border-width: 5px 5px 0 5px;
-                border-color: #DDE5E8 transparent transparent transparent;
+                border-color: #dde5e8 transparent transparent transparent;
                 transform: rotate(-90deg);
                 margin: 0 0 0 20px;
                 transition: all 0.2s ease;
-                &.active{
-                  transform: rotate(0deg)
+                &.active {
+                  transform: rotate(0deg);
                 }
               }
             }
@@ -2420,7 +2551,7 @@ width: 100%;
           width: auto;
           .btn-red {
             margin: 0 auto 24px auto;
-            a{
+            a {
               padding: 17px 38px;
               font-size: 16px;
             }

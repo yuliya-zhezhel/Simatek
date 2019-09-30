@@ -164,7 +164,7 @@ body {
               max-width: 422px;
               width: 100%;
               letter-spacing: 0.2px;
-font-weight: bold;
+              font-weight: bold;
               font-family: $Montserrat;
             }
             .btn-red {
@@ -1495,7 +1495,7 @@ font-weight: bold;
       display: block;
       font-size: 12px;
       text-decoration: none;
-      padding: 0px 3px;
+      padding: 0px 4px;
       color: #fff;
       margin-left: 0px;
       border: 1px solid transparent;
@@ -1537,7 +1537,7 @@ font-weight: bold;
           background: #da251c;
           border-radius: 50%;
           position: absolute;
-          left: -2px;
+          left: -1px;
           top: 0px;
           z-index: -3;
         }
@@ -1559,6 +1559,160 @@ font-weight: bold;
     line-height: 29px;
     text-transform: uppercase;
     margin-bottom: 28px;
+  }
+}
+/* events */
+.line {
+  width: 100%;
+  height: 3px;
+  background: $grey;
+  margin: 0 0 16px 0;
+}
+.breadcrumbs {
+  max-width: 946px;
+  margin: 0 auto;
+  font-family: $Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0 auto 24px auto;
+  color: #565656;
+  display: flex;
+  flex-direction: row;
+  .breadcrumbs__item{
+    padding: 0 17px 0 0;
+position: relative;
+    &::after{
+      content: ">";
+      position: absolute;
+      right: 6px;
+    }
+    &:last-child::after{
+      display: none;
+    }
+  }
+}
+.events-page {
+  max-width: 946px;
+  margin: 0 auto 60px auto;
+  h1 {
+    font-family: $Montserratsemibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+
+    margin: 0 0 57px 0;
+  }
+  .event-inner {
+    display: flex;
+    height: 820px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .events-wrapp {
+      .event {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin: 0 0 26px;
+        padding: 0 0 14px;
+        .date {
+          max-width: 87px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          .number {
+            font-family: $Montserratsemibold;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 76px;
+            line-height: 60px;
+            text-transform: uppercase;
+          }
+          .month {
+            font-family: $Montserratsemibold;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 120%;
+            color: #000000;
+          }
+          .week {
+            font-family: $Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 120%;
+            color: #808285;
+          }
+        }
+        .event-description {
+          margin: 0 0 0 87px;
+          .event-description-header {
+            font-family: $MontserratBold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 120%;
+            color: #000000;
+            margin: 0 0 18px 0;
+            max-width: 503px;
+            width: 100%;
+          }
+          .event-description-date {
+            display: flex;
+            flex-direction: column;
+            font-family: $Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 120%;
+            color: #565656;
+            margin: 0 0 14px 0;
+          }
+          .event-calendar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 185px;
+
+            width: 100%;
+            .event-calendar-link {
+              font-family: $Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 120%;
+              /* or 14px */
+
+              text-decoration-line: underline;
+
+              color: #da251c;
+            }
+            img {
+              max-width: 20px;
+            }
+          }
+        }
+        &:after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          background: $grey;
+          position: absolute;
+          bottom: 0;
+        }
+        .arrow-red {
+          display: none;
+        }
+      }
+    }
   }
 }
 @media #{$tablet} {
@@ -1910,131 +2064,21 @@ font-weight: bold;
   .partner-page:hover:after {
     background: #acacace6;
   }
-}
-/* events */
-.line {
-  width: 100%;
-  height: 3px;
-  background: $grey;
-  margin: 0 0 16px 0;
-}
-.breadscrums {
-  max-width: 946px;
-  margin: 0 auto;
-  font-family: $Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  margin: 0 auto 24px auto;
-  color: #565656;
-}
-.events-page {
-  max-width: 946px;
-  margin: 0 auto 60px auto;
-  h1 {
-    font-family: $Montserratsemibold;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: uppercase;
 
-    margin: 0 0 57px 0;
+  .breadcrumbs {
+    margin: 0 40px 24px 40px;
   }
-  .event {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin: 0 0 26px;
-    padding: 0 0 14px;
-    .date {
-      max-width: 87px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .number {
-        font-family: $Montserratsemibold;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 76px;
-        line-height: 60px;
-        text-transform: uppercase;
-      }
-      .month {
-        font-family: $Montserratsemibold;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 120%;
-        color: #000000;
-      }
-      .week {
-        font-family: $Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 120%;
-        color: #808285;
-      }
-    }
-    .event-description {
-      margin: 0 0 0 87px;
-      .event-description-header {
-        font-family: $MontserratBold;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 120%;
-        color: #000000;
-        margin: 0 0 18px 0;
-      }
-      .event-description-date {
-        display: flex;
-        flex-direction: column;
-        font-family: $Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 120%;
-        color: #565656;
-        margin: 0 0 18px 0;
-      }
-      .event-calendar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 185px;
-
-        width: 100%;
-        .event-calendar-link {
-          font-family: $Roboto;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 12px;
-          line-height: 120%;
-          /* or 14px */
-
-          text-decoration-line: underline;
-
-          color: #da251c;
-        }
-        img {
-          max-width: 20px;
-        }
-      }
-    }
-    &:after {
-      content: "";
-      width: 100%;
-      height: 2px;
-      background: $grey;
-      position: absolute;
-      bottom: 0;
-    }
+  .events-page {
+    margin: 0 40px 32px 40px;
+  }
+  .line {
+    display: none;
+  }
+  .events-page h1 {
+    margin: 0 0 48px 0;
+  }
+  .events-page .event-inner{
+    height: 797px;
   }
 }
 @media screen and (max-width: 885px) {
@@ -2747,5 +2791,57 @@ font-weight: bold;
   }
   .pro-baza .pro-baza-wrapp .pro-baza-txt ul li:before {
     top: 7px;
+  }
+  /* event */
+  .breadcrumbs {
+    margin: 0 33px 24px 16px;
+    font-size: 10px;
+  }
+  .events-page {
+    margin: 0 16px 30px 16px;
+  }
+  .events-page .event-inner .events-wrapp .event .date .number {
+    font-size: 62px;
+  }
+  .events-page h1 {
+    font-size: 21px;
+    margin: 0 0 18px 0;
+  }
+  .events-page .event-inner .events-wrapp .event .event-description .event-calendar {
+    display: none;
+  }
+  .events-page .event-inner .events-wrapp .event .event-description .event-description-header {
+    font-family: $Montserrat;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .events-page .event-inner .events-wrapp .event .event-description {
+    margin: 13px 0 0 25px;
+  }
+  .events-page .event-inner .events-wrapp .event .event-description .event-description-date {
+    font-size: 13px;
+  }
+  .events-page .event-inner .events-wrapp .event .date .month {
+    font-size: 21px;
+    line-height: 90%;
+  }
+  .events-page .event-inner .events-wrapp .event .date .week {
+    font-size: 15px;
+  }
+  .events-page .event-inner .events-wrapp .event {
+    margin: 0 0 11px;
+    padding: 0 0 25px;
+  }
+  .events-page .event-inner .events-wrapp .event .arrow-red {
+    display: block;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    img {
+      max-width: 17px;
+    }
+  }
+  .events-page .event-inner {
+    height: 717px;
   }
 }

@@ -1116,3 +1116,8 @@
     margin: 3px 0 0 0;
   }
 }
+@media screen and (max-width: 375px) {
+  .partners.wrapper .partner-block .partners-first{
+    max-width: 321px;
+  }
+}

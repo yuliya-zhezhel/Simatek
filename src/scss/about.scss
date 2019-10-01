@@ -765,7 +765,7 @@
   
   .partners.wrapper .partner-block .partners-first {
     max-width: 494px;
-    margin: 0 0 38px 0;
+    margin: 0 0 21px 0;
   }
   .partners.wrapper .partner-block .partners-second {
     max-width: 200px;
@@ -786,6 +786,9 @@
   }
   .main .about-company .about-company-inner .about-company-icons {
     margin: 25px 25px 0 25px;
+  }
+  .partners.wrapper .partner-block{
+    max-width: 410px;
   }
 }
 @media screen and (max-width: 690px) {
@@ -1114,6 +1117,9 @@
   .contact-form .form-wrap .error-message img{
     width: 25px;
     margin: 3px 0 0 0;
+  }
+  .partners.wrapper .partner-block .partners-first{
+    max-width: 322px;
   }
 }
 @media screen and (max-width: 375px) {

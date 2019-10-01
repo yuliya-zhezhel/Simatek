@@ -1195,7 +1195,7 @@ body {
       &:after {
         content: "";
         background: url(../image/download.png) no-repeat center;
-        background-size: cover;
+        background-size: contain;
         height: 20px;
         width: 20px;
         position: absolute;
@@ -1206,7 +1206,7 @@ body {
       &:hover {
         &:after {
           background: url(../image/download-active.png) no-repeat center;
-          background-size: cover;
+          background-size: contain;
         }
         p {
           text-decoration: underline;
@@ -2079,6 +2079,44 @@ position: relative;
   }
   .events-page .event-inner{
     height: 797px;
+  }
+  /* materials */
+  .tabcontent #search{
+    display: none;
+  }
+  .tabcontent .doc-wrapp .doc{
+    max-width: 100%;
+    border: none;
+    border-bottom: 1px solid #dde5e8;
+  }
+  .material h1{
+    margin: 0 40px 26px 40px;
+
+  }
+  .material{
+    margin: 12px auto 50px auto;
+  }
+  .tabcontent{
+    margin:0 40px;
+    height: 874px;
+  }
+  .tab-material{
+    margin: 0 0 60px 0;
+  }
+  .tabcontent .doc-wrapp .doc:after{
+    height: 41px;
+    width: 43px;
+    top: 20px;
+    right: -2px;
+  }
+  .tabcontent .doc-wrapp .doc{
+    margin: 0 0 29px 0;
+    padding: 16px 0px 41px 0;
+  }
+  .tabcontent .doc-wrapp .doc p{
+    max-width: 503px;
+    font-size: 16px;
+    margin: 0 0 0 27px;
   }
 }
 @media screen and (max-width: 885px) {

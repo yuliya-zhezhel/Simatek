@@ -1,6 +1,8 @@
 @import "template.scss";
 @import "typography.scss";
 @import "main.scss";
+
+
 .che-slideshow {
   overflow: hidden;
   position: relative;
@@ -8,7 +10,18 @@
   max-width: 1022px;
   margin: 0 auto;
 }
-
+.che-slideshow-block{
+  display: flex;
+  flex-direction: row;
+  .che-slideshow-s{
+        max-width: 300px;
+      width: 100%;  
+    img{
+      max-width: 300px;
+      width: 100%;  
+    }
+  }
+}
 .che-slideshow-slide {
   width: 100%;
   top: 0;
@@ -126,6 +139,7 @@
   .che-slideshow{
 	margin:0 auto 0px auto;  
   }
+
 @media #{$tablet} {
 
 }

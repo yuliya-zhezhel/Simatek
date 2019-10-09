@@ -5,7 +5,7 @@
 .btn-red {
   box-sizing: unset;
   color: $white;
-
+display:flex;
   a {
     color: $white;
     background: $red;
@@ -39,6 +39,31 @@
       margin: 0 0 0 10px;
     }
   }
+  &.center{
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 48px 0;
+    a{
+      padding: 8px 26px;
+      font-size: 14px;
+    }
+  }
+}
+.btn-more {
+  border: 2px solid $red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 14px;
+  }
+  a {
+    padding: 7px 17px;
+  }
+  &:hover {
+    background: $darkred;
+  }
+
 }
 html {
   height: 100%;
@@ -1665,6 +1690,10 @@ body {
   .breadcrumbs__item {
     padding: 0 17px 0 0;
     position: relative;
+
+    a{
+         color: #565656; 
+    }
     &::after {
       content: ">";
       position: absolute;
@@ -1686,7 +1715,7 @@ body {
     line-height: 29px;
     text-transform: uppercase;
 
-    margin: 0 0 57px 0;
+    margin: 0 0 57px -1px;
   }
   .event-inner {
     display: flex;
@@ -1728,9 +1757,25 @@ body {
             font-family: $Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 14px;
             line-height: 120%;
             color: #808285;
+            position: relative;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: 7px 0 0 5px;
+            &:after{
+              content: "";
+              background: #EFEFEF;
+              width: 23px;
+              height: 23px;
+              border-radius: 50%;
+              position: absolute;
+              left: -5px;
+              top: -2px;
+              z-index: -1;
+            }
           }
         }
         .event-description {
@@ -1745,6 +1790,11 @@ body {
             margin: 0 0 18px 0;
             max-width: 503px;
             width: 100%;
+            &:hover{
+              a{
+                text-decoration: underline;
+              }
+            }
           }
           .event-description-date {
             display: flex;
@@ -1798,6 +1848,7 @@ body {
   }
 }
 /* event inner */
+
 .events-page-img{
   margin: 0 0 25px 0;
   img{
@@ -1869,7 +1920,11 @@ a{
     display: flex;
   justify-content: space-between;
   align-items: center;
-
+  }
+  &:hover{
+    img{
+    filter: invert(100%);
+    }
   }
 }
 .events-page-header{
@@ -1888,6 +1943,249 @@ margin: 0 0 0 0;
 max-width: 300px;
 width: 100%;
 }
+.project-description{
+  margin: 0 0 46px 0;
+  h3{
+    font-family: $Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 120%;
+color: #000000;
+margin: 0 0 26px 0;
+  }
+  p,li{
+    font-family: $Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 145%;
+color: #808285;
+margin: 0 0 29px 0;
+  }
+
+   ul{
+
+      li {
+    margin: 0 0 9px 0;
+    position: relative;
+    text-indent: 1em;
+
+    &:before {
+      content: "";
+      height: 5px;
+      width: 5px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+      left: 0px;
+      top: 5px;
+  }
+}
+}
+}
+.another-project-title{
+  margin: 0 0 38px 0;
+}
+.another-progect{
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  border:1px solid $grey;
+  margin: 0 0 20px 0;
+  p{
+    max-width: 523px;
+    font-family: "montserratmedium",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 134.09%;
+    padding: 30px 30px;
+  }
+  img{
+    max-width: 300px;
+    height: 159px;
+  }
+  .btn-more{
+    position: absolute;
+    right: 40px;
+    bottom: 17px;
+  }
+}
+
+.controls{
+  display:flex;
+  flex-direction: row;
+  max-width: 200px;
+  margin: 0 auto 17px auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 17px 0;
+}
+.carousel {
+  position: relative;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+  line-height: 1;
+}
+img {
+  vertical-align: middle;
+}
+#carousel-custom {
+  margin: 0 0 56px 0;
+  width: 100%;
+}
+.indicators{
+  list-style: none;
+  display: flex;
+.indicator{
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+  border:1px solid #808285;
+  &.active{
+    background: $red;
+    border:1px solid $red;
+  }
+}
+}
+#carousel-custom .carousel-indicators {
+  margin: 0 0 30px 0;
+  position: static;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#carousel-custom .carousel-indicators li {
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  display: inline-block;
+  height: auto;
+  margin: 0 !important;
+  width: auto;
+  border:7px solid transparent; 
+}
+#carousel-custom .carousel-indicators li img {
+  display: block;
+  max-width: 296px;
+}
+#carousel-custom .carousel-indicators li .img-responsive{
+  height: 200px;
+}
+#carousel-custom .carousel-indicators li.active{
+border:7px solid $red;
+}
+
+#carousel-custom .carousel-outer {
+  position: relative;
+}
+.carousel-control{
+  img{
+    max-width: 16px;
+  }
+}
+.carousel-control.left {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+.carousel-control.right {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  img{
+    transform: rotate(180deg);
+  }
+}
+.indicators{
+  max-width: 300px;
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50px;
+}
+.indicator{
+  width: 5px;
+  height: 5px;
+  border:1px solid $black;
+}
+
+.carousel-inner>.active {
+  left: 0;
+}
+
+
+.carousel-inner>.item {
+  position: relative;
+  display: none;
+  -webkit-transition: .6s ease-in-out left;
+  -o-transition: .6s ease-in-out left;
+  transition: .6s ease-in-out left;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+  display: block;
+  max-width: 100%;
+  height: 370px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-inner>.next, .carousel-inner>.prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+@media not all, (-webkit-transform-3d){
+.carousel-inner>.item {
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    -o-transition: -o-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+}
+
+.carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev {
+  display: block;
+}
+@media not all, (-webkit-transform-3d){
+.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+    left: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+}
+@media not all, (-webkit-transform-3d){
+.carousel-inner>.item.active.left, .carousel-inner>.item.prev {
+    left: 0;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+}
+@media not all, (-webkit-transform-3d){
+.carousel-inner>.item.active.right, .carousel-inner>.item.next {
+    left: 0;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+}
+}
+
+
 @media #{$tablet} {
   body {
     .wrapper-main .content {
@@ -2185,6 +2483,7 @@ width: 100%;
       width: 1025px;
     }
   }
+
   /*   sklad */
   .sklad {
     margin: 17px 40px 0 40px;
@@ -2239,6 +2538,7 @@ width: 100%;
 
   .breadcrumbs {
     margin: 0 40px 24px 40px;
+
   }
   .events-page {
     margin: 0 40px 32px 40px;
@@ -2343,6 +2643,54 @@ width: 100%;
   .events-page h1{
     max-width: 500px;
   }
+  .events-page.inner{
+      margin: 0 0px 35px 0px;
+      h1{
+        margin: 0 40px 24px 40px;
+      }
+  }
+  .carousel-inner{
+    margin: 0 0 10px 0;
+  }
+  .controls{
+    margin: 0 auto 4px auto;
+  }
+  #carousel-custom .carousel-indicators{
+    margin: 0 40px 30px 40px;
+    max-width: fit-content;
+    width: 100%;
+  }
+  #carousel-custom .carousel-indicators li .img-responsive {
+    height: 156px;
+}
+.project-description{
+  margin: 0 40px 46px 40px;
+}
+#carousel-custom{
+  margin: 0 0 46px 0;
+}
+.project-description h3{
+text-transform: uppercase;
+}
+.project-description h3{
+  margin: 0 0 13px 0;
+}
+.another-project-title{
+  margin: 0 40px 38px 40px;
+}
+.another-projects{
+  margin: 0 40px 20px 40px;
+}
+.another-progect img{
+  max-width: 245px;
+  height: 181px;
+  object-fit: cover;
+}
+.another-progect{
+  .btn-more a{
+    font-size: 13px;
+  }
+}
 }
 @media screen and (max-width: 885px) {
   .sklad .download-buttons {

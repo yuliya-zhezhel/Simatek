@@ -67,8 +67,16 @@
 html {
   height: 100%;
 }
+#event .contact-info-bg, #event2 .contact-info-bg{
+  display: none;
+}
+#progects{
+  .contact-info-bg{
+    display: none;
+  }
+}
 .contact-info-bg {
-  display:none;
+
   background: #efefef;
   .contact-info {
     margin: 0px auto;
@@ -3767,9 +3775,10 @@ img {
     .contact-info-bg{
     display:block; 
   }
-
+  #progects .contact-info-bg,#event .contact-info-bg, #event2 .contact-info-bg{
+    display:block;  
+  }
   #progects {
-
     .breadcrumbs {
       display: flex;
       margin: 0 33px 44px 16px;

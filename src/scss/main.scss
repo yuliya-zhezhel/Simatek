@@ -2905,10 +2905,15 @@ img {
       .btn-more {
         border: none;
       }
-      .another-progect .btn-more {
+      .another-progect {
+        border:none;
+        border-top:1px solid #dde5e8 ;
+        border-bottom: 1px solid #dde5e8;
+        .btn-more {
         right: 5px;
         bottom: 3px;
       }
+    }
     }
     .another-progect img {
       height: 118px;
@@ -3759,6 +3764,7 @@ img {
   .thumbnail > img {
     height: 270px;
   }
+
   .another-progect img {
     max-width: 133px;
   }
@@ -3831,11 +3837,15 @@ img {
       .btn-more {
         border: none;
       }
-      .another-progect .btn-more {
+      .another-progect {
+        .btn-more {
         right: 5px;
         bottom: 3px;
       }
     }
+
+    }
+
     .another-progect img {
       height: 118px;
       max-width: 103px;

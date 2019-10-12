@@ -656,6 +656,12 @@
             }
         }
     });
+
+    $('.carousel').bind('slid.bs.carousel', function (e) {
+        let active = $('.carousel-indicators li.active').attr('data-slide-to');
+        $('.indicators').children().removeClass('active');
+        $(`.indicators li[data-slide-to='${active}']`).addClass('active');
+    });
 </script>
 
 </html>

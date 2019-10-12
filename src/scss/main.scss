@@ -67,16 +67,16 @@
 html {
   height: 100%;
 }
-#event .contact-info-bg, #event2 .contact-info-bg{
+#event .contact-info-bg,
+#event2 .contact-info-bg {
   display: none;
 }
-#progects{
-  .contact-info-bg{
+#progects {
+  .contact-info-bg {
     display: none;
   }
 }
 .contact-info-bg {
-
   background: #efefef;
   .contact-info {
     margin: 0px auto;
@@ -877,8 +877,6 @@ body {
           }
         }
       }
-
-
     }
     .map {
       background: url(../image/map.png) no-repeat center;
@@ -1710,6 +1708,9 @@ body {
   color: #565656;
   display: flex;
   flex-direction: row;
+  &.invisible {
+    visibility: hidden;
+  }
   .breadcrumbs__item {
     padding: 0 17px 0 0;
     position: relative;
@@ -2227,6 +2228,95 @@ img {
     padding: 0;
   }
 }
+/* progect-wrapp */
+.progect-wrapp {
+  max-width: 945px;
+  margin: 0 auto 68px auto;
+  h1 {
+    font-family: $MontserratBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0px 0 46px 0;
+  }
+  .progect-box-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .progect-box {
+      max-width: 300px;
+      width: 100%;
+      height: 394px;
+      margin: 0 0 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .progect-box-txt {
+        border-right: 1px solid #c4c4c4;
+        border-left: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        height: 192px;
+      }
+      &.red {
+        background: $red;
+      }
+      &.darkred{
+        background: $darkred;
+      }
+      .btn-white {
+        border: 2px solid $white;
+        margin: 0px 25px 0px 30px;
+        display: flex;
+        a {
+          font-family: $Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+          color: #ffffff;
+          padding: 9px 20px;
+        }
+      }
+      .progect-box-description {
+        font-family: $MontserratMedium;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 134.09%;
+        color: #ffffff;
+        margin: 0px 32px 72px 30px;
+      }
+      .progect-box-header {
+        font-family: $MontserratMedium;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+        margin: 30px 25px 58px 30px;
+      }
+      .progect-box-txt {
+        font-family: $MontserratMedium;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #000000;
+        padding: 38px 24px;
+      }
+      img {
+        max-width: 300px;
+        width: 100%;
+      }
+    }
+  }
+}
 @media #{$tablet} {
   body {
     .wrapper-main .content {
@@ -2686,7 +2776,7 @@ img {
   .events-page.inner {
     margin: 0 0px 35px 0px;
     max-width: 100%;
-    width:100%;
+    width: 100%;
     h1 {
       margin: 0 40px 24px 40px;
     }
@@ -2733,12 +2823,30 @@ img {
       font-size: 13px;
     }
   }
-  .events-page-txt{
+  .events-page-txt {
     margin: 0 40px 40px 40px;
   }
-  .btn-back{
+  .btn-back {
     margin: 45px 40px 55px 40px;
   }
+  .progect-wrapp h1{
+    margin: 0px 11px 20px 40px;
+  }
+  .progect-wrapp .progect-box-inner{
+       justify-content: center;
+  }
+  .progect-wrapp .progect-box-inner .progect-box img {
+    max-width: 334px;
+}
+.progect-wrapp .progect-box-inner .progect-box{
+  max-width: 334px;
+  margin: 0 10px 20px 10px;
+}
+.progect-wrapp .progect-box-inner .progect-box{
+  &:nth-child(4){
+    display: none;
+  }
+}
 }
 @media screen and (max-width: 885px) {
   .sklad .download-buttons {
@@ -2906,14 +3014,14 @@ img {
         border: none;
       }
       .another-progect {
-        border:none;
-        border-top:1px solid #dde5e8 ;
+        border: none;
+        border-top: 1px solid #dde5e8;
         border-bottom: 1px solid #dde5e8;
         .btn-more {
-        right: 5px;
-        bottom: 3px;
+          right: 5px;
+          bottom: 3px;
+        }
       }
-    }
     }
     .another-progect img {
       height: 118px;
@@ -2928,7 +3036,6 @@ img {
   body .wrapper-main .content .menu-bottom {
     padding: 58px 0 30px 0;
   }
-  
 }
 @media #{$tablet-mini} {
   body {
@@ -3778,16 +3885,21 @@ img {
     display: none;
   }
 
-    .contact-info-bg{
-    display:block; 
+  .contact-info-bg {
+    display: block;
   }
-  #progects .contact-info-bg,#event .contact-info-bg, #event2 .contact-info-bg{
-    display:block;  
+  #progects .contact-info-bg,
+  #event .contact-info-bg,
+  #event2 .contact-info-bg {
+    display: block;
   }
   #progects {
     .breadcrumbs {
       display: flex;
       margin: 0 33px 44px 16px;
+      &.invisible{
+        display: none;
+      }
     }
     .events-page.inner h1 {
       display: flex;
@@ -3839,11 +3951,10 @@ img {
       }
       .another-progect {
         .btn-more {
-        right: 5px;
-        bottom: 3px;
+          right: 5px;
+          bottom: 3px;
+        }
       }
-    }
-
     }
 
     .another-progect img {
@@ -3856,7 +3967,7 @@ img {
   }
 
   .breadcrumbs__item {
-    &:nth-child(2) {
+    &.hide {
       a {
         display: none;
       }
@@ -3865,4 +3976,39 @@ img {
       }
     }
   }
+  .progect-wrapp .progect-box-inner .progect-box{
+    &:nth-child(1){
+      display: none;
+    }
+  }
+  .progect-wrapp .progect-box-inner .progect-box{
+    width:100%;
+    max-width: 100%;
+    height: 180px;
+    margin: 0 0px 20px 0px;
+  }
+  .progect-wrapp .progect-box-inner .progect-box .progect-box-txt{
+    border: none;
+  }
+  .progect-wrapp .progect-box-inner .progect-box img{
+    max-width: 100%;
+    height: 116px;
+    object-fit: cover;
+  }
+  .progect-wrapp{
+    margin: 40px auto 68px auto;
+  }
+  .progect-wrapp h1 {
+    margin: 0px 11px 20px 19px;
+    font-size: 20px;
+}
+.progect-wrapp .progect-box-inner .progect-box .progect-box-txt{
+  font-family: $MontserratBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 21px;
+  color: #000000;
+  padding: 21px 20px;
+}
 }

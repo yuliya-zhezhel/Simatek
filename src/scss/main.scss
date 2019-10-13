@@ -161,7 +161,7 @@ html {
         }
         .btn-more {
           border: 2px solid $red;
-          padding: 7px 0px 7px 0px;
+          padding: 0;
           &:hover {
             border: 2px solid $black;
           }
@@ -2316,6 +2316,9 @@ img {
       }
     }
   }
+}
+#contact{
+margin: 35px 0 0 0;
 }
 @media #{$tablet} {
   body {

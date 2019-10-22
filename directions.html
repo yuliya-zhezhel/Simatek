@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Автоматизация + Технологии | Simatek</title>
+    <script type="text/javascript" src="dist/main.js"></script>
+    <link rel='stylesheet' href='dist/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400|Roboto:100,300,400,500,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper-main" id="directions-page">
+        <div class="content">
+            <div class="header">
+                <div class="header-top">
+                    <div class="wrapper flex">
+                        <div class="phone flex">
+                            <img src="image/phone.png" alt="phone" class="header-img">
+                            <a href="tel:+375 29 123-45-67" class="header-link">+375 29 123-45-67</a></div>
+                        <div class="mail flex">
+                            <img src="image/mail.png" alt="mail" class="header-img">
+                            <a href="mailto:contact@simatek.by" class="header-link">contact@simatek.by</a></div>
+                        <div class="lang">
+                            <a href="#" class="lang-link">Ru</a>
+                            <p>|</p>
+                            <a href="#" class="lang-link active">En</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom-inner  wrapper flex">
+                        <div class="logo">
+                            <img src="image/logo.png" alt="logo">
+                        </div>
+                        <div class="beidge">
+                            <img src="image/partner.svg" alt="partner">
+                            <img src="image/partner2.svg" alt="partner">
+                            <img src="image/partner.svg" alt="partner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu wrapper">
+                <div class="menu-icon">
+                    <img src="image/Menu_butter.png" alt="" class="burger">
+                </div>
+
+                <ul class="nav display">
+                    <div class="close-icon"></div>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">O компании <div class="tri"></div></a>
+                        <ul class="submenu">
+                            <li class="submenu_li"><a class="submenu_a" href="">Общая информация </a></li>
+                            <li class="submenu_li"><a class="submenu_a" href="">Производственная база</a></li>
+                            <li class="submenu_li"><a class="submenu_a" href="">Склад </a></li>
+                            <li class="submenu_li"><a class="submenu_a" href="">Партнеры</a></li>
+                            <li class="submenu_li"><a class="submenu_a" href="">Материалы</a></li>
+                            <li class="submenu_li"><a class="submenu_a" href="">Мероприятия </a></li>
+                            <li class="submenu_li"><a class="submenu_a" href="">Вакансии</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Направления <div class="tri"></div></a>
+                        <ul class="submenu">
+                            <li class="submenu_li">
+                                <a class="submenu_a" href="#">Промышленность<div class="tri"></div></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#" class="tab-wrap active">Металлургическая</a>
+                                        <ul class="tab">
+                                            <li><a href="#" class="tablinks active"
+                                                    onclick="openCity(event, 'doc')">Решения</a></li>
+                                            <li><a href="#" class="tablinks" onclick="openCity(event, 'photo')">Услуги
+                                                </a></li>
+                                            <li><a href="#" class="tablinks"
+                                                    onclick="openCity(event, 'video')">Проекты</a></li>
+                                            <li><a href="#" class="tablinks"
+                                                    onclick="openCity(event, 'partner')">Партнеры</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Нефтехимическая</a></li>
+                                    <li><a href="">Горнорудная </a></li>
+                                    <li><a href="">Пищевая</a></li>
+                                    <li><a href="">Машиностроение </a></li>
+                            </li>
+                        </ul>
+                    <li class="submenu_li"><a class="submenu_a" href="">Энергетика</a></li>
+                    <li class="submenu_li"><a class="submenu_a" href="">Индустрия 4.0</a></li>
+                </ul>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Сертификаты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Проекты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Контакты</a>
+                </li>
+                </ul>
+                <div class="search-row">
+                    <div id="search">
+                        <input type="text" placeholder="Поиск по сайту" class="search-field">
+                        <div class="search-btn"><img src="image/search.png" alt="search"></div>
+                    </div>
+
+                    <div class="btn"><a href="#">Получить консультацию</a></div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div id="directions">
+
+                <div class="menu-left">
+                    <ul class="nav display">
+                        <div class="close-icon"></div>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">O компании <div class="tri"></div></a>
+                            <ul class="submenu hidden-xl">
+                                <li class="submenu_li"><a class="submenu_a" href="">Общая информация </a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="">Производственная база</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="">Склад </a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="">Партнеры</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="">Материалы</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="">Мероприятия </a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="">Вакансии</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item red">
+                            <a class="nav-link" href="#">Направления <div class="tri"></div></a>
+                            <ul class="submenu" style="display: none;">
+                                <li class="submenu_li">
+                                    <a class="submenu_a" href="">Промышленность<div class="tri"></div></a>
+                                    <ul class="sub-submenu" style="display:none;">
+                                        <li><a href="" class="tab-wrap active">Металлургическая</a>
+                                            <ul class="tab show">
+                                                <li><a href="#" class="tablinks active"
+                                                        onclick="openCity(event, 'doc')">Решения</a></li>
+                                                <li><a href="#" class="tablinks"
+                                                        onclick="openCity(event, 'photo')">Услуги </a></li>
+                                                <li><a href="#" class="tablinks"
+                                                        onclick="openCity(event, 'video')">Проекты</a></li>
+                                                <li><a href="#" class="tablinks"
+                                                        onclick="openCity(event, 'partner')">Партнеры</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="" class="tab-wrap">Нефтехимическая</a></li>
+                                        <li><a href="" class="tab-wrap">Горнорудная </a></li>
+                                        <li><a href="" class="tab-wrap">Пищевая</a></li>
+                                        <li><a href="" class="tab-wrap">Машиностроение </a></li>
+                                </li>
+                            </ul>
+                        <li class="submenu_li"><a class="submenu_a" href="">Энергетика</a></li>
+                        <li class="submenu_li"><a class="submenu_a" href="">Индустрия 4.0</a></li>
+                    </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Сертификаты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Контакты</a>
+                    </li>
+                    </ul>
+                </div>
+
+                <div class="second-column">
+                    <div class="second-column-header">
+                        <div class="menu-icon">
+                            <img src="image/Menu_butter.png" alt="" class="burger">
+                        </div>
+                        <div class="search-row">
+                            <div id="search">
+                                <input type="text" placeholder="Поиск по сайту" class="search-field">
+                                <div class="search-btn"><img src="image/search.png" alt="search"></div>
+                            </div>
+
+                            <div class="btn"><a href="#">Получить консультацию</a></div>
+                        </div>
+                    </div>
+                    <div class="direction-wrap">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__item breadcrumbs__item--first">
+                                <a href="/">Направления</a>
+                            </li>
+
+                            <li class="breadcrumbs__item hide">
+                                <a href="/">Промышленность</a>
+                            </li>
+                            <li class="breadcrumbs__item breadcrumbs__item--last">
+                                <a href="/">Металлургическая промышленность</a>
+                            </li>
+                        </ul>
+                        <div class="direction-title">
+                            <h1>Металлургическая промышленность</h1>
+                        </div>
+                        <div class="direction-img">
+                            <img src="image/directions.jpg" alt="">
+                        </div>
+                        <div class="direction-txt">
+                            <p>Реализация комплексных инжиниринговый проектов металлургического производства по
+                                принципу:
+                                Технология + Цифровизация «под ключ»</p>
+                        </div>
+                    </div>
+                    <!-- Tab links -->
+                    <div class="tab-material ">
+                        <button class="tablinks active" onclick="openCity(event, 'doc')">Решения</button>
+                        <button class="tablinks" onclick="openCity(event, 'photo')">Услуги</button>
+                        <button class="tablinks" onclick="openCity(event, 'video')">Проекты</button>
+                        <button class="tablinks" onclick="openCity(event, 'partner')">Партнеры</button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="doc" class="tabcontent" style="display: flex;">
+                        <div class="direction-inner">
+                            <div class="direction-box">
+                                <img src="image/des.jpg" alt="">
+                                <p>Комплексные проекты АСУ ТП металлургического производства Комплексные проекты АСУ ТП
+                                    металлургического производства</p>
+                            </div>
+                            <div class="direction-box">
+                                <img src="image/des.jpg" alt="">
+                                <p>Комплексные проекты АСУ ТП металлургического производства</p>
+                            </div>
+                            <div class="direction-box">
+                                <img src="image/des.jpg" alt="">
+                                <p>Комплексные проекты АСУ ТП металлургического производства</p>
+                            </div>
+                            <div class="direction-box">
+                                <img src="image/des.jpg" alt="">
+                                <p>Комплексные проекты АСУ ТП металлургического производства</p>
+                            </div>
+                            <div class="direction-box">
+                                <img src="image/des.jpg" alt="">
+                                <p>Комплексные проекты АСУ ТП металлургического производства</p>
+                            </div>
+
+                        </div>
+                        <div class="btn-red">
+                            <a class="" href="#">Получить консультацию<img src="image/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+
+
+                    <div id="photo" class="tabcontent">
+                        <div class="direction-inner">
+                            <div class="direction-box">
+                                <img src="image/box3.png" alt="">
+                                <p>Комплексные проекты АСУ ТП металлургического производства Комплексные проекты АСУ ТП
+                                    металлургического производства</p>
+                            </div>
+                            <div class="direction-box">
+                                <img src="image/des.jpg" alt="">
+                                <p>Комплексные проекты АСУ ТП металлургического производства</p>
+                            </div>
+                            <div class="direction-box">
+                                <img src="image/des.jpg" alt="">
+                                <p>Комплексные проекты АСУ ТП металлургического производства</p>
+                            </div>
+                            <div class="direction-box">
+                                <img src="image/des.jpg" alt="">
+                                <p>Комплексные проекты АСУ ТП металлургического производства</p>
+                            </div>
+                            <div class="direction-box">
+                                <img src="image/des.jpg" alt="">
+                                <p>Комплексные проекты АСУ ТП металлургического производства</p>
+                            </div>
+                        </div>
+                        <div class="btn-red">
+                            <a class="" href="#">Получить консультацию<img src="image/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div id="video" class="tabcontent">
+                        <div class="direction-progects">
+                            <div class="direction-progects-box">
+                                <div class="direction-progects__img">
+                                    <img src="image/picture.jpg" alt="">
+                                </div>
+                                <div class="direction-progects__wrapp">
+                                    <p class="direction-progects__p">Модернизация четырех дуговых сталеплавильных печей
+                                        ДСП-6Н2. ОАО «БЕЛАЗ» -
+                                        управляющая
+                                        компания холдинга «БЕЛАЗ-ХОЛДИНГ»
+                                    </p>
+                                    <div class="btn-more">
+                                        <a href="#">
+                                            <p>Подробнее</p>
+                                            <img src="image/arrow_red.png" alt="arrow" class="arrow-red">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="direction-progects-box">
+                                <div class="direction-progects__img">
+                                    <img src="image/picture.jpg" alt="">
+                                </div>
+                                <div class="direction-progects__wrapp">
+                                    <p class="direction-progects__p">Модернизация четырех дуговых сталеплавильных печей
+                                        ДСП-6Н2. ОАО «БЕЛАЗ» -
+                                        управляющая
+                                        компания холдинга «БЕЛАЗ-ХОЛДИНГ»
+                                    </p>
+                                    <div class="btn-more">
+                                        <a href="#">
+                                            <p>Подробнее</p>
+                                            <img src="image/arrow_red.png" alt="arrow" class="arrow-red">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="direction-progects-box">
+                                <div class="direction-progects__img">
+                                    <img src="image/picture.jpg" alt="">
+                                </div>
+                                <div class="direction-progects__wrapp">
+                                    <p class="direction-progects__p">Модернизация четырех дуговых сталеплавильных печей
+                                        ДСП-6Н2. ОАО «БЕЛАЗ» -
+                                        управляющая
+                                        компания холдинга «БЕЛАЗ-ХОЛДИНГ»
+                                    </p>
+                                    <div class="btn-more">
+                                        <a href="#">
+                                            <p>Подробнее</p>
+                                            <img src="image/arrow_red.png" alt="arrow" class="arrow-red">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination-wrapp">
+                            <ul class="pagination modal-2">
+                                <li><a href="#" class="prev"></a></li>
+                                <li><a href="#">1</a></li>
+                                <li> <a href="#">2</a></li>
+                                <li> <a href="#" class="active">3</a></li>
+                                <li> <a href="#">4</a></li>
+                                <li> <a href="#">5</a></li>
+                                <li> <a href="#">6</a></li>
+                                <li> <a href="#">7</a></li>
+                                <li> <a href="#">8</a></li>
+                                <li> <a href="#">9</a></li>
+                                <li><a href="#" class="next"></a></li>
+                            </ul><br>
+                        </div>
+
+
+
+
+                    </div>
+                    <div id="partner" class="tabcontent">
+                        <div class="directions-partner">
+                            <div class="directions-partner-box">
+                                <img src="image/partners/partner1.png" alt="">
+                            </div>
+                            <div class="directions-partner-box">
+                                <img src="image/partners/partner3.png" alt="">
+                            </div>
+                            <div class="directions-partner-box">
+                                <img src="image/partners/partner5.png" alt="">
+                            </div>
+                            <div class="directions-partner-box">
+                                <img src="image/partners/partner.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-info-bg">
+                    <div class="contact-info">
+                        <div class="title">
+                            <h2>Контакты</h2>
+                        </div>
+                        <div class="contacts">
+                            <div class="box box1">
+                                <img src="image/icon_location.svg" alt="" class="box-icon">
+                                <p>ООО "Симатек Групп"<br>
+                                    220043, Республика Беларусь,
+                                    Минск, пр-т Независимости 95 корпус 7, офис 25,<br>
+                                    ст. метро Парк Челюскинцев </p>
+                            </div>
+                            <div class="box box2">
+                                <img src="image/icon_phone.svg" alt="" class="box-icon">
+                                <div class="phones">
+                                    <a href="tel:+375 (17) 280 47 20">+375 (17) 280 47 20</a><br>
+                                    <a href="tel: +375 (17) 287 35 81"> +375 (17) 287 35 81</a><br>
+                                    <a href="tel:+375 (29) 1 108 108"> +375 (29) 1 108 108</a><br>
+                                    <a href="tel:+375 (29) 5 669 701"> +375 (29) 5 669 701</a><br>
+                                </div>
+                            </div>
+                            <div class="box box3">
+                                <img src="image/icon_mail.png" alt="" class="box-icon">
+                                <a href="mailto:simatek@simatek.by" class="box-link">simatek@simatek.by</a>
+                                <div class="social">
+                                    <a class="fb" href="https://www.facebook.com/simatekminsk/ ">
+
+                                    </a>
+                                    <a class="in"
+                                        href="https://www.linkedin.com/company/simatek-group/?trk=biz-companies-cym ">
+
+                                    </a>
+
+                                </div>
+                                <div class="btn btn-more">
+                                    <a href="#" class="">Связаться с нами</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="menu-bottom">
+                    <div class="menu-bottom-inner">
+                        <ul class="nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">O компании</a>
+                                <ul class="submenu">
+                                    <li><a href="">Общая информация </a></li>
+                                    <li><a href="">Производственная база</a></li>
+                                    <li><a href="">Склад </a></li>
+                                    <li><a href="">Партнеры</a></li>
+                                    <li><a href="">Материалы</a></li>
+                                    <li><a href="">Мероприятия </a></li>
+                                    <li><a href="">Вакансии</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Промышленность</a>
+                                <ul class="submenu">
+                                    <li><a href="">Нефтехимическая</a></li>
+                                    <li><a href="">Горнорудная</a></li>
+                                    <li><a href="">Пищевая </a></li>
+                                    <li><a href="">Производственные машины</a></li>
+
+                                    <li><a href="">Комплексные проекты</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Энергетика</a>
+                                <ul class="submenu">
+                                    <li><a href="">Аналитика</a></li>
+                                    <li><a href="">АСУТП</a></li>
+                                    <li><a href="">Генерация</a></li>
+                                    <li><a href="">Проектирование</a></li>
+                                    <li><a href="">Комплексные проекты</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <div>
+                                    <a class="nav-link" href="#">Индустрия 4.0</a>
+                                    <ul class="submenu">
+                                        <li><a href="">Отрасли</a></li>
+                                        <li><a href="">Решения</a></li>
+                                        <li><a href="">Услуги </a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a class="nav-link" href="#">Другое</a>
+                                    <ul class="submenu">
+                                        <li><a href="">Сертификаты</a></li>
+                                        <li><a href="">Проекты</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                </div>
+                        </ul>
+                        </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="spacer">
+
+                </div>
+                <div class="licence">
+                    <div class="wrapper">
+                        <p>© Группа компаний SIMATEK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+
+    function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "flex";
+        evt.currentTarget.className += " active";
+        console.log("#directions .nav");
+        $(".menu .nav").css({ "display": "none", "opacity": "0" });
+        $(".menu").css({ "margin": "0 17px" });
+    }
+
+
+
+
+
+    /* photo popup */
+    function popupOpenClose(popup) {
+
+        /* Add div inside popup for layout if one doesn't exist */
+        if ($(".wrapper").length == 0) {
+            $(popup).wrapInner("<div class='wrapper'></div>");
+        }
+
+        /* Open popup */
+        $(popup).show();
+
+        /* Close popup if user clicks on background */
+        $(popup).click(function (e) {
+            if (e.target == this) {
+                if ($(popup).is(':visible')) {
+                    $(popup).hide();
+                }
+            }
+        });
+
+        /* Close popup and remove errors if user clicks on cancel or close buttons */
+        $(popup).find("button[name=close]").on("click", function () {
+            if ($(".formElementError").is(':visible')) {
+                $(".formElementError").remove();
+            }
+            $(popup).hide();
+        });
+    }
+
+    $(document).ready(function () {
+        $("[data-js=open]").on("click", function () {
+            popupOpenClose($(".popup"));
+        });
+    });
+</script>
+
+<script>
+    /* material search */
+    $(".material-search .search-btn").click(function () {
+        if ($(window).width() > 978) {
+            $(".material-search .search-field").css({ "opacity": "1", "border": "1px solid #DDE5E8" })
+        }
+    });
+    /* header menu */
+    $(".menu .search-btn").click(function () {
+        if ($(window).width() > 978) {
+            $(".menu .nav").css("display", "none")
+                && $(".search-row").css({ "max-width": "100%", "width": "100%" })
+                && $(".search-field").css({ "display": "block", "width": "100%", "border": "1px solid #DDE5E8" })
+                && $("#search").css({ "max-width": "733px", "width": "100%" })
+        }
+        if ($(window).width() < 600) {
+            $('.btn').hide()
+                && $(".nav").css("display", "none")
+                && $(".search-field").css({ "display": "block", "width": "100%", "border": "1px solid #DDE5E8" })
+                && $("#search").css({ "max-width": "733px", "width": "100%", "margin": "0" })
+                && $(".search-row").css({ "max-width": "90%" })
+        }
+        if ($(window).width() < 500) {
+            $(".search-row").css({ "max-width": "85%" })
+        }
+        if ($(window).width() < 400) {
+            $(".search-row").css({ "max-width": "76%" })
+                && $(".menu").css({ "padding-top": "25px", "padding-bottom": "23px" })
+        }
+    });
+
+    $(".menu-icon").click(function () {
+            $(".menu").css({ "margin": "0" })
+            && $(".menu .nav").css({ "display": "flex", "opacity": "1" });
+
+    })
+    $(".close-icon").click(function () {
+        $(".menu").css({ "margin": "0 17px" })
+            && $(".menu .nav").css({ "display": "none" });
+    })
+
+    $("#directions .close-icon").click(function () {
+        if ($(window).width() < 978) {
+            $("#directions .menu-left").css({ "width": "0", "opacity": "0" })
+            $("#directions .menu-left .nav").css({ "display": "none" })
+                && $("#directions .menu-icon").css({ "display": "flex", "": "" })
+        }
+    });
+    $("#directions .second-column-header .menu-icon").click(function () {
+        if ($(window).width() < 978) {
+            $("#directions .menu-left").css({ "width": "100%", "opacity": "1" })
+                && $("#directions .menu-left .nav").css({ "display": "block" })
+                && $("#directions .menu-icon").css({ "display": "none", "": "" })
+        }
+    });
+
+
+
+
+
+    let showMenu = function (menu, toggleActive, toggleRed, animate) {
+
+        var $this = menu;
+
+        let hide = function (item) {
+            item.nextAll().removeClass('show');
+            item.nextAll().slideUp(animate ? 350 : 0);
+            if (toggleActive) { item.children().removeClass('active'); }
+            if (toggleRed) { item.parent().removeClass('red'); }
+        }
+
+        if ($this.next().hasClass('show')) {
+            hide($this);
+        } else {
+            hide($this.parent().siblings("li").children("a"));
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(animate ? 350 : 0);
+            if (toggleActive) { $this.children().toggleClass('active'); }
+            if (toggleRed) { $this.parent().toggleClass('red'); }
+        }
+    };
+
+    if ($(window).width() < 600) {
+
+        $('.submenu_a').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, false, true);
+        });
+
+
+        $('.nav-link').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, true, true);
+        });
+
+        $('.tab-wrap').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, false, true);
+        });
+    }
+    else if ($(window).width() <= 980) {
+        showMenu($('#directions .red .submenu_a').first(), true, false, false);
+        $('#directions .submenu_a').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, false, true);
+
+        });
+
+        showMenu($('#directions .red .nav-link'), true, false, false);
+        $('#directions .nav-link').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, true, true);
+
+        });
+
+        $('#directions .tab-wrap').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, false, true);
+        });
+    }
+    else {
+        showMenu($('#directions .red .submenu_a').first(), true, false, false);
+        $('#directions .submenu_a').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, false, true);
+
+        });
+
+        showMenu($('#directions .red .nav-link'), true, false, false);
+        $('#directions .nav-link').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, true, true);
+
+        });
+
+        // $('#directions .tab-wrap').click(function (e) {
+        //     e.preventDefault();
+        //     showMenu($(this), true, false, true);
+        // }); 
+    }
+</script>
+
+</html>

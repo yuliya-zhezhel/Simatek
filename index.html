@@ -198,24 +198,25 @@
                             <div class="progect-img"></div>
                             <div class="progect-inner">
                                 <div class="progect-inner-txt">
-                                <h3 class="progect-inner-h3">АСУ линии холодного копчения рыбы длиной до 25 см, с печью
-                                    конвейерного типа Н10-ИЛД-4 </h3>
-                                <p class="progect-inner-p">Заказчик:
-                                    ГП «Минскрыбпром»
-                                    Назначение системы:
-                                    Линия Н10 – ИЛД – 4 предназначена для:
-                                    <br>
-                                    • холодного копчения рыбы длиной до 25 см (ставрида океаническая), мойвы жирной,
-                                    кильки
-                                    каспийской
-                                    <br>
-                                    или черноморской, мелочи III гр. (ставрида);
-                                    <br>
-                                    • вяления мойвы жирной;<br>
-                                    • соления рыбы.
- 
-                                </p>
-                            </div>
+                                    <h3 class="progect-inner-h3">АСУ линии холодного копчения рыбы длиной до 25 см, с
+                                        печью
+                                        конвейерного типа Н10-ИЛД-4 </h3>
+                                    <p class="progect-inner-p">Заказчик:
+                                        ГП «Минскрыбпром»
+                                        Назначение системы:
+                                        Линия Н10 – ИЛД – 4 предназначена для:
+                                        <br>
+                                        • холодного копчения рыбы длиной до 25 см (ставрида океаническая), мойвы жирной,
+                                        кильки
+                                        каспийской
+                                        <br>
+                                        или черноморской, мелочи III гр. (ставрида);
+                                        <br>
+                                        • вяления мойвы жирной;<br>
+                                        • соления рыбы.
+
+                                    </p>
+                                </div>
                                 <div class="btn btn-more">
                                     <a href="#">
                                         Подробнее
@@ -352,24 +353,25 @@
                         <div class="progect red">
                             <div class="progect-img"></div>
                             <div class="progect-inner">
-                                    <div class="progect-inner-txt">
-                                <h3 class="progect-inner-h3">АСУ линии холодного копчения рыбы длиной до 25 см, с печью
-                                    конвейерного типа Н10-ИЛД-4 </h3>
-                                <p class="progect-inner-p">Заказчик:
-                                    ГП «Минскрыбпром»
-                                    Назначение системы:
-                                    Линия Н10 – ИЛД – 4 предназначена для:
-                                    <br>
-                                    • холодного копчения рыбы длиной до 25 см (ставрида океаническая), мойвы жирной,
-                                    кильки
-                                    каспийской
-                                    <br>
-                                    или черноморской, мелочи III гр. (ставрида);
-                                    <br>
-                                    • вяления мойвы жирной;<br>
-                                    • соления рыбы.
-                                </p>
-                                    </div>
+                                <div class="progect-inner-txt">
+                                    <h3 class="progect-inner-h3">АСУ линии холодного копчения рыбы длиной до 25 см, с
+                                        печью
+                                        конвейерного типа Н10-ИЛД-4 </h3>
+                                    <p class="progect-inner-p">Заказчик:
+                                        ГП «Минскрыбпром»
+                                        Назначение системы:
+                                        Линия Н10 – ИЛД – 4 предназначена для:
+                                        <br>
+                                        • холодного копчения рыбы длиной до 25 см (ставрида океаническая), мойвы жирной,
+                                        кильки
+                                        каспийской
+                                        <br>
+                                        или черноморской, мелочи III гр. (ставрида);
+                                        <br>
+                                        • вяления мойвы жирной;<br>
+                                        • соления рыбы.
+                                    </p>
+                                </div>
                                 <div class="btn btn-more">
                                     <a href="#">
                                         Подробнее
@@ -387,7 +389,7 @@
                         <h2>События</h2>
                     </div>
                 </div>
-                
+
                 <!-- carousel -->
                 <div class="che-slideshow">
                     <div class="che-slideshow-slide">
@@ -491,7 +493,7 @@
 
 
 
-            
+
             <div class="map">
 
             </div>
@@ -610,58 +612,102 @@
 
 
 
-    $('.nav-link').click(function (e) {
-        if ($(window).width() < 600) {
-            e.preventDefault();
-            var $this = $(this);
-            if ($this.next().hasClass('show')) {
-                $this.next().removeClass('show');
-                $this.next().slideUp(350);
-                $this.parent().toggleClass('red');
-            } else {
-                $this.parent().parent().find('li .submenu').removeClass('show');
-                $this.parent().parent().find('li .submenu').slideUp(350);
-                $this.next().toggleClass('show');
-                $this.next().slideToggle(350);
-                $this.parent().toggleClass('red');
+    /*     $('.nav-link').click(function (e) {
+            if ($(window).width() < 600) {
+                e.preventDefault();
+                var $this = $(this);
+                if ($this.next().hasClass('show')) {
+                    $this.next().removeClass('show');
+                    $this.next().slideUp(350);
+                    $this.parent().toggleClass('red');
+                } else {
+                    $this.parent().parent().find('li .submenu').removeClass('show');
+                    $this.parent().parent().find('li .submenu').slideUp(350);
+                    $this.next().toggleClass('show');
+                    $this.next().slideToggle(350);
+                    $this.parent().toggleClass('red');
+                }
             }
-        }
-    });
+        });
+    
+        $('.submenu_a').click(function (e) {
+            if ($(window).width() < 600) {
+                e.preventDefault();
+                var $this = $(this);
+                if ($this.next().hasClass('show')) {
+                    $this.next().removeClass('show');
+                    $this.children().removeClass('active');
+                    $this.next().slideUp(350);
+                } else {
+                    console.log($this);
+                    $this.parent().parent().find('li .sub-submenu').removeClass('show');
+                    $this.children().toggleClass('active');
+                    $this.parent().parent().find('li .sub-submenu').slideUp(350);
+                    $this.next().toggleClass('show');
+    
+                    $this.next().slideToggle(350);
+                }
+            }
+        });
+    
+        $('.tab-wrap').click(function (e) {
+            if ($(window).width() < 600) {
+                e.preventDefault();
+                var $this = $(this);
+                if ($this.next().hasClass('show')) {
+                    $this.next().removeClass('show');
+                    $this.next().slideUp(350);
+                } else {
+                    $this.parent().parent().find('li .tab').removeClass('show');
+                    $this.parent().parent().find('li .tab').slideUp(350);
+                    $this.next().toggleClass('show');
+                    $this.next().slideToggle(350);
+                }
+            }
+        }); */
 
+
+
+
+
+    let showMenu = function (menu, toggleActive, toggleRed, animate) {
+
+        var $this = menu;
+
+        let hide = function (item) {
+            item.nextAll().removeClass('show');
+            item.nextAll().slideUp(animate ? 350 : 0);
+            if (toggleActive) { item.children().removeClass('active'); }
+            if (toggleRed) { item.parent().removeClass('red'); }
+        }
+
+        if ($this.next().hasClass('show')) {
+            hide($this);
+        } else {
+            hide($this.parent().siblings("li").children("a"));
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(animate ? 350 : 0);
+            if (toggleActive) { $this.children().toggleClass('active'); }
+            if (toggleRed) { $this.parent().toggleClass('red'); }
+        }
+    };
+
+    
     $('.submenu_a').click(function (e) {
-        if ($(window).width() < 600) {
-            e.preventDefault();
-            var $this = $(this);
-            if ($this.next().hasClass('show')) {
-                $this.next().removeClass('show');
-                $this.children().removeClass('active');
-                $this.next().slideUp(350);
-            } else {
-                console.log($this);
-                $this.parent().parent().find('li .sub-submenu').removeClass('show');
-                $this.children().toggleClass('active');
-                $this.parent().parent().find('li .sub-submenu').slideUp(350);
-                $this.next().toggleClass('show');
-
-                $this.next().slideToggle(350);
-            }
-        }
+        e.preventDefault();
+        showMenu($(this), true, false, true);
     });
 
+    
+    $('.nav-link').click(function (e) {
+        e.preventDefault();
+        showMenu($(this), true, true, true);
+    });
+
+  
     $('.tab-wrap').click(function (e) {
-        if ($(window).width() < 600) {
-            e.preventDefault();
-            var $this = $(this);
-            if ($this.next().hasClass('show')) {
-                $this.next().removeClass('show');
-                $this.next().slideUp(350);
-            } else {
-                $this.parent().parent().find('li .tab').removeClass('show');
-                $this.parent().parent().find('li .tab').slideUp(350);
-                $this.next().toggleClass('show');
-                $this.next().slideToggle(350);
-            }
-        }
+        e.preventDefault();
+        showMenu($(this), true, false, true);
     });
 </script>
 

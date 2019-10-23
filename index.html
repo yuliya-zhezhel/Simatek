@@ -612,61 +612,6 @@
 
 
 
-    /*     $('.nav-link').click(function (e) {
-            if ($(window).width() < 600) {
-                e.preventDefault();
-                var $this = $(this);
-                if ($this.next().hasClass('show')) {
-                    $this.next().removeClass('show');
-                    $this.next().slideUp(350);
-                    $this.parent().toggleClass('red');
-                } else {
-                    $this.parent().parent().find('li .submenu').removeClass('show');
-                    $this.parent().parent().find('li .submenu').slideUp(350);
-                    $this.next().toggleClass('show');
-                    $this.next().slideToggle(350);
-                    $this.parent().toggleClass('red');
-                }
-            }
-        });
-    
-        $('.submenu_a').click(function (e) {
-            if ($(window).width() < 600) {
-                e.preventDefault();
-                var $this = $(this);
-                if ($this.next().hasClass('show')) {
-                    $this.next().removeClass('show');
-                    $this.children().removeClass('active');
-                    $this.next().slideUp(350);
-                } else {
-                    console.log($this);
-                    $this.parent().parent().find('li .sub-submenu').removeClass('show');
-                    $this.children().toggleClass('active');
-                    $this.parent().parent().find('li .sub-submenu').slideUp(350);
-                    $this.next().toggleClass('show');
-    
-                    $this.next().slideToggle(350);
-                }
-            }
-        });
-    
-        $('.tab-wrap').click(function (e) {
-            if ($(window).width() < 600) {
-                e.preventDefault();
-                var $this = $(this);
-                if ($this.next().hasClass('show')) {
-                    $this.next().removeClass('show');
-                    $this.next().slideUp(350);
-                } else {
-                    $this.parent().parent().find('li .tab').removeClass('show');
-                    $this.parent().parent().find('li .tab').slideUp(350);
-                    $this.next().toggleClass('show');
-                    $this.next().slideToggle(350);
-                }
-            }
-        }); */
-
-
 
 
 
@@ -692,7 +637,7 @@
         }
     };
 
-    
+    if ($(window).width() < 600) {
     $('.submenu_a').click(function (e) {
         e.preventDefault();
         showMenu($(this), true, false, true);
@@ -709,6 +654,7 @@
         e.preventDefault();
         showMenu($(this), true, false, true);
     });
+}
 </script>
 
 </html>

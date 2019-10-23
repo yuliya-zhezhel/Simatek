@@ -518,49 +518,44 @@
 
     let showMenu = function (menu, toggleActive, toggleRed, animate) {
 
-        var $this = menu;
+var $this = menu;
 
-        let hide = function (item) {
-            item.nextAll().removeClass('show');
-            item.nextAll().slideUp(animate ? 350 : 0);
-            if (toggleActive) { item.children().removeClass('active'); }
-            if (toggleRed) { item.parent().removeClass('red'); }
-        }
+let hide = function (item) {
+    item.nextAll().removeClass('show');
+    item.nextAll().slideUp(animate ? 350 : 0);
+    if (toggleActive) { item.children().removeClass('active'); }
+    if (toggleRed) { item.parent().removeClass('red'); }
+}
 
-        if ($this.next().hasClass('show')) {
-            hide($this);
-        } else {
-            hide($this.parent().siblings("li").children("a"));
-            $this.next().toggleClass('show');
-            $this.next().slideToggle(animate ? 350 : 0);
-            if (toggleActive) { $this.children().toggleClass('active'); }
-            if (toggleRed) { $this.parent().toggleClass('red'); }
-        }
-    };
+if ($this.next().hasClass('show')) {
+    hide($this);
+} else {
+    hide($this.parent().siblings("li").children("a"));
+    $this.next().toggleClass('show');
+    $this.next().slideToggle(animate ? 350 : 0);
+    if (toggleActive) { $this.children().toggleClass('active'); }
+    if (toggleRed) { $this.parent().toggleClass('red'); }
+}
+};
 
-
-    $('.submenu_a').click(function (e) {
-        e.preventDefault();
-        showMenu($(this), true, false, true);
-    });
-
-
-    $('.nav-link').click(function (e) {
-        e.preventDefault();
-        showMenu($(this), true, true, true);
-    });
+if ($(window).width() < 600) {
+$('.submenu_a').click(function (e) {
+e.preventDefault();
+showMenu($(this), true, false, true);
+});
 
 
-    $('.tab-wrap').click(function (e) {
-        e.preventDefault();
-        showMenu($(this), true, false, true);
-    });
+$('.nav-link').click(function (e) {
+e.preventDefault();
+showMenu($(this), true, true, true);
+});
 
-    $('.vacancy-menu_a').click(function (e) {
-        e.preventDefault();
-        showMenu($(this), true, false, true);
-        $('.vacancy-menu_li').toggleClass('border');
-    });
+
+$('.tab-wrap').click(function (e) {
+e.preventDefault();
+showMenu($(this), true, false, true);
+});
+}
 </script>
 
 </html>

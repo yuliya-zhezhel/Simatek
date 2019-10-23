@@ -2975,6 +2975,41 @@ img {
     }
   }
 }
+.success-state{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 57px 0 0 0;
+  .success-img{
+    margin: 0 0 30px 0;
+
+    img{
+      width: 62px;
+    }
+  }
+  .success-header{
+    margin: 0 0 17px 0;
+    p{
+      font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+text-transform: uppercase;
+    }
+  }
+  .success-txt{
+    P{
+      font-family: $Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 128.9%;
+color: #565656;
+    }
+  }
+}
 @media #{$tablet} {
   body {
     .wrapper-main .content {
@@ -3516,6 +3551,9 @@ img {
   #search_not_found h1 {
     margin: 0 40px 87px 40px;
   }
+  #search_not_found{
+    margin: 16px auto;
+  }
   #contact {
     margin: 18px 0 0 0;
     .contact-form-img {
@@ -3802,6 +3840,13 @@ img {
       display: flex;
     }
   }
+  .success-state{
+    margin: 57px 0 242px 0;
+  }
+  .success-state .success-img{
+    margin: 0 0 30px 0;
+  }
+
 }
 @media screen and (max-width: 885px) {
   .sklad .download-buttons {
@@ -5202,4 +5247,14 @@ img {
       width: 100%;
     }
   }
+  .success-state .success-img img{
+    width: 112px;
+  }
+  .success-txt{
+    max-width: 272px;
+    text-align: center;
+  }
+  .success-state {
+    margin: 0px 0 119px 0;
+}
 }

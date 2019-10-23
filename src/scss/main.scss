@@ -987,7 +987,7 @@ body {
   display: flex;
   flex-direction: column;
   h1 {
-    font-family: $Montserratsemibold;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1050,7 +1050,7 @@ body {
   display: flex;
   flex-direction: column;
   h1 {
-    font-family: $Montserratsemibold;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1121,7 +1121,7 @@ body {
   display: flex;
   flex-direction: column;
   h1 {
-    font-family: $Montserratsemibold;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1703,16 +1703,7 @@ body {
   }
 
   .modal-2 {
-    li {
-      &:first-child {
-        a {
-        }
-      }
-      &:last-child {
-        a {
-        }
-      }
-    }
+
     a {
       color: #999;
       position: relative;
@@ -1720,7 +1711,7 @@ body {
         color: $red;
       }
       &.active,
-      &:active {
+      &.active {
         color: $white;
         z-index: 1;
         &:after {
@@ -1746,7 +1737,7 @@ body {
   flex-direction: column;
   position: relative;
   h1 {
-    font-family: $Montserratsemibold;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1798,7 +1789,7 @@ body {
   max-width: 946px;
   margin: 0 auto 60px auto;
   h1 {
-    font-family: $Montserratsemibold;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1828,7 +1819,7 @@ body {
           justify-content: center;
           align-items: flex-start;
           .number {
-            font-family: $Montserratsemibold;
+            font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 76px;
@@ -1836,7 +1827,7 @@ body {
             text-transform: uppercase;
           }
           .month {
-            font-family: $Montserratsemibold;
+            font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 24px;
@@ -1871,7 +1862,7 @@ body {
         .event-description {
           margin: 0 0 0 87px;
           .event-description-header {
-            font-family: $MontserratBold;
+            font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 18px;
@@ -2299,7 +2290,7 @@ img {
   max-width: 945px;
   margin: 0 auto 68px auto;
   h1 {
-    font-family: $MontserratBold;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -2400,7 +2391,7 @@ img {
   margin: 34px auto;
   h1,
   h3 {
-    font-family: $MontserratBold;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -2493,7 +2484,7 @@ img {
   max-width: 945px;
   margin: 34px auto 67px auto;
   h1 {
-    font-family: $Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -2510,7 +2501,7 @@ img {
   .search-wrap {
     max-width: 323px;
     h3 {
-      font-family: $Montserratsemibold;
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 16px;
@@ -2819,7 +2810,7 @@ img {
   }
   h1,
   h2 {
-    font-family: $MontserratBold;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -2866,7 +2857,7 @@ img {
         }
       }
       p {
-        font-family: $Montserratsemibold;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -2875,9 +2866,9 @@ img {
       }
       a {
         color: $white;
-        font-family: $Montserratsemibold;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 150%;
         text-decoration: underline;
@@ -4987,7 +4978,7 @@ img {
     font-size: 20px;
   }
   .progect-wrapp .progect-box-inner .progect-box .progect-box-txt {
-    font-family: $MontserratBold;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 15px;

@@ -88,7 +88,7 @@ $h3:#000000;
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto:400,500,700&display=swap&subset=cyrillic');
 
 
 h1 {
@@ -104,7 +104,7 @@ line-height: 24px;
 }
 
 h2{
-font-family: $MontserratBold;
+    font-family: 'Montserrat', sans-serif;
 font-weight: 600;
 font-style: normal;
 

@@ -2384,6 +2384,9 @@ img {
     width: 100%;
     margin: 10px 0px 40px auto;
   }
+  .title-p{
+    max-width: 372px;
+  }
 }
 /* search_not_found */
 #search_not_found {
@@ -2464,7 +2467,7 @@ img {
     color: #565656;
   }
   .contact-form .form-wrap .form-inner .form {
-    padding: 0 40px 0 68px;
+    padding: 0 40px 0 65px;
   }
 }
 #contact {
@@ -3527,6 +3530,7 @@ img {
     .contact-form .form-wrap .form-inner {
       width: 100%;
     }
+
   }
   .search-page {
     margin: 0 40px 50px 40px;
@@ -3779,9 +3783,13 @@ img {
     .vacancy .vacancy-txt-red .vacancy-txt {
       padding: 54px 25px;
     }
+    .vacancy .vacancy-txt-red .vacancy-txt p{
+      margin: 0 0px 48px 16px;
+    }
     .vacancy .vacancy-img {
       width: 75%;
     }
+
   }
   .tabcontent .popup .controls {
     max-width: 500px;

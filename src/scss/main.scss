@@ -1219,6 +1219,7 @@ body {
   text-align: center;
   color: rgba(0, 0, 0, 0.25);
   position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   &.active {
     color: #000000;
     &:after {
@@ -2551,6 +2552,9 @@ img {
   .contact-info-bg {
     display: none;
   }
+  .content .menu .nav:after{
+    display: none;
+  }
 }
 #directions {
   display: flex;
@@ -2559,7 +2563,7 @@ img {
   width: 100%;
   margin: 0 auto;
   .btn-red {
-    margin: 0 0 30px 0;
+    margin: 0 0 55px 0;
     img {
       display: none;
     }
@@ -2571,7 +2575,7 @@ img {
     margin: 0 0 20px 0;
   }
   .pagination-wrapp {
-    margin: 0 0 20px 0;
+    margin: 0 0 45px 0;
   }
   .directions-partner {
     display: flex;
@@ -2579,7 +2583,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 450px;
-
+    margin: 0 0 32px 0;
     .directions-partner-box {
       max-width: 200px;
       width: 100%;
@@ -2630,6 +2634,13 @@ img {
       .btn-more {
         position: absolute;
         bottom: 20px;
+        &:hover{
+          background: $black;
+          border: 2px solid $black;
+          a{
+          color: $white;
+          }
+        }
       }
     }
   }
@@ -2668,7 +2679,7 @@ img {
     &::after {
       content: "";
       flex: auto;
-      max-width: 214px;
+      max-width: 223px;
     }
     .direction-box {
       max-width: 223px;
@@ -2678,7 +2689,9 @@ img {
         margin: 0 0px 15px 0;
       }
       img {
-        max-width: 100%;
+        height: 100px;
+        object-fit: cover;
+        width: 100%;
       }
       p {
         font-family: $Roboto;
@@ -2718,7 +2731,7 @@ img {
       border-width: 5px 5px 0 5px;
       border-color: #da251c transparent transparent transparent;
       transform: rotate(-90deg);
-      margin: 11px 0 0 15px;
+      margin: 10px 0 0 15px;
       transition: all 0.2s ease;
       &.active {
         transform: rotate(0deg);
@@ -2726,7 +2739,7 @@ img {
     }
   }
   .submenu_a {
-    margin: 0 20px 10px 20px;
+    margin: 0 20px 10px 40px;
   }
   .submenu {
     width: 100%;
@@ -2747,7 +2760,7 @@ img {
       }
     }
     .tab-wrap {
-      padding: 5px 20px;
+      padding: 5px 40px;
       position: relative;
       width: 100%;
       display: flex;
@@ -3712,6 +3725,7 @@ color: #565656;
 
     .sub-submenu .tab-wrap.active {
       background: transparent;
+      padding: 0 30px 5px 30px;
     }
     .sub-submenu .tab-wrap:focus {
       background: transparent;
@@ -3726,7 +3740,7 @@ color: #565656;
       font-size: 14px;
       line-height: 32px;
       color: rgba(86, 86, 86, 0.5);
-      padding: 0 30px;
+      padding: 0 45px;
       &:focus {
         background: transparent;
       }
@@ -3751,7 +3765,10 @@ color: #565656;
       padding: 0 15px;
     }
     .submenu_a {
-      margin: 0 0px 10px 20px;
+      margin: 0 0px 10px 30px;
+    }
+    .sub-submenu .tab-wrap{
+      padding: 5px 30px;
     }
     .direction-progects-box {
       margin: 0 0px 20px 0px;
@@ -5139,7 +5156,7 @@ color: #565656;
     .second-column .direction-inner .direction-box p {
       border: none;
       height: 60px;
-      padding: 15px 6px;
+      padding: 15px 2px;
     }
     .second-column .direction-title h1 {
       font-size: 20px;
@@ -5184,6 +5201,11 @@ color: #565656;
     }
     .directions-partner {
       margin: 30px 0;
+    }
+    .direction-progects-box .direction-progects__wrapp .btn-more:hover{
+      background: transparent;
+      border: 2px solid transparent;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
   }
   .vacancy .vacancy-description {

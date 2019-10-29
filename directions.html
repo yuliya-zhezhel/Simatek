@@ -56,7 +56,7 @@
                         <a class="nav-link active" href="#">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">O компании <div class="tri"></div></a>
+                        <a class="nav-link" href="#">О компании <div class="tri"></div></a>
                         <ul class="submenu">
                             <li class="submenu_li"><a class="submenu_a" href="">Общая информация </a></li>
                             <li class="submenu_li"><a class="submenu_a" href="">Производственная база</a></li>
@@ -126,7 +126,7 @@
                             <a class="nav-link active" href="#">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">O компании <div class="tri"></div></a>
+                            <a class="nav-link" href="#">о компании <div class="tri"></div></a>
                             <ul class="submenu hidden-xl">
                                 <li class="submenu_li"><a class="submenu_a" href="">Общая информация </a></li>
                                 <li class="submenu_li"><a class="submenu_a" href="">Производственная база</a></li>
@@ -523,9 +523,11 @@
         // Show the current tab, and add an "active" class to the button that opened the tab
         document.getElementById(cityName).style.display = "flex";
         evt.currentTarget.className += " active";
-        console.log("#directions .nav");
+        if ($(window).width() < 978) {
         $(".menu .nav").css({ "display": "none", "opacity": "0" });
-        $(".menu").css({ "margin": "0 17px" });
+                $(".menu").css({ "margin": "0 17px" });
+        }
+
     }
 
 
@@ -600,7 +602,7 @@
     });
 
     $(".menu-icon").click(function () {
-            $(".menu").css({ "margin": "0" })
+        $(".menu").css({ "margin": "0" })
             && $(".menu .nav").css({ "display": "flex", "opacity": "1" });
 
     })
@@ -628,7 +630,7 @@
 
 
 
-    let showMenu = function (menu, toggleActive, toggleRed, animate) {
+    let toggleMenu = function (menu, toggleActive, toggleRed, animate) {
 
         var $this = menu;
 
@@ -650,63 +652,121 @@
         }
     };
 
-    if ($(window).width() < 600) {
+    let showMenu = function (menu) {
 
-        $('.submenu_a').click(function (e) {
-            e.preventDefault();
-            showMenu($(this), true, false, true);
-        });
+        var $this = menu;
+
+        let hide = function (item) {
+            item.nextAll().removeClass('show');
+            item.nextAll().slideUp(0);
+            item.children().removeClass('active');
+            item.parent().removeClass('red');
+        }
+
+        if (!$this.next().hasClass('show')) {
+            hide($this.parent().siblings("li").children("a"));
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(0);
+            $this.children().toggleClass('active');
+        }
+    };
+
+    // if ($(window).width() < 600) {
+    //
+    // $('.submenu_a').click(function (e) {
+    //     e.preventDefault();
+    //     showMenu($(this), true, false, true);
+    // });
 
 
-        $('.nav-link').click(function (e) {
-            e.preventDefault();
-            showMenu($(this), true, true, true);
-        });
+    // $('.nav-link').click(function (e) {
+    //     e.preventDefault();
+    //     showMenu($(this), true, true, true);
+    // });
 
-        $('.tab-wrap').click(function (e) {
-            e.preventDefault();
-            showMenu($(this), true, false, true);
-        });
-    }
-    else if ($(window).width() <= 980) {
-        showMenu($('#directions .red .submenu_a').first(), true, false, false);
-        $('#directions .submenu_a').click(function (e) {
-            e.preventDefault();
-            showMenu($(this), true, false, true);
+    // $('.tab-wrap').click(function (e) {
+    //     e.preventDefault();
+    //     showMenu($(this), true, false, true);
+    // });
+    // }
+    // else if ($(window).width() <= 980) {
+    // showMenu($('#directions .red .submenu_a').first(), true, false, false);
+    // $('#directions .submenu_a').click(function (e) {
+    //     e.preventDefault();
+    //     showMenu($(this), true, false, true);
 
-        });
+    // });
 
-        showMenu($('#directions .red .nav-link'), true, false, false);
-        $('#directions .nav-link').click(function (e) {
-            e.preventDefault();
-            showMenu($(this), true, true, true);
+    // showMenu($('#directions .red .nav-link'), true, false, false);
+    // $('#directions .nav-link').click(function (e) {
+    //     e.preventDefault();
+    //     showMenu($(this), true, true, true);
 
-        });
+    // });
 
-        $('#directions .tab-wrap').click(function (e) {
-            e.preventDefault();
-            showMenu($(this), true, false, true);
-        });
-    }
-    else {
-        showMenu($('#directions .red .submenu_a').first(), true, false, false);
-        $('#directions .submenu_a').click(function (e) {
-            e.preventDefault();
-            showMenu($(this), true, false, true);
+    // $('#directions .tab-wrap').click(function (e) {
+    //     e.preventDefault();
+    //     showMenu($(this), true, false, true);
+    // });
+    // }
+    // else {
+    // showMenu($('#directions .red .submenu_a').first(), true, false, false);
+    // $('#directions .submenu_a').click(function (e) {
+    //     e.preventDefault();
+    //     showMenu($(this), true, false, true);
 
-        });
+    // });
 
-        showMenu($('#directions .red .nav-link'), true, false, false);
-        $('#directions .nav-link').click(function (e) {
-            e.preventDefault();
-            showMenu($(this), true, true, true);
+    // showMenu($('#directions .red .nav-link'), true, false, false);
+    // $('#directions .nav-link').click(function (e) {
+    //     e.preventDefault();
+    //     showMenu($(this), true, true, true);
 
-        });
+    // });
 
-        // $('#directions .tab-wrap').click(function (e) {
-        //     e.preventDefault();
-        //     showMenu($(this), true, false, true);
-        // }); 
+    // // $('#directions .tab-wrap').click(function (e) {
+    // //     e.preventDefault();
+    // //     showMenu($(this), true, false, true);
+    // // }); 
+    // }
+
+    $('.submenu_a').click(function (e) {
+        e.preventDefault();
+        toggleMenu($(this), true, false, true);
+    });
+
+
+    $('.nav-link').click(function (e) {
+        e.preventDefault();
+        toggleMenu($(this), true, true, true);
+    });
+
+    $('.tab-wrap').click(function (e) {
+        e.preventDefault();
+        if ($(window).width() <= 980) {
+            toggleMenu($(this), true, false, true);
+        }
+    });
+
+    var baseNavLink = $('#directions .red .nav-link');
+    var baseSubmenuA = $('#directions .red .submenu_a').first();
+    
+    // 0 - small, 1 - middle, 2 - large
+    var screenType = $(window).width() < 600 ? 0 : $(window).width() <= 980 ? 1 : 2;
+    window.onresize = function (event) {
+        let newScreenType = $(window).width() < 600 ? 0 : $(window).width() <= 980 ? 1 : 2;
+        if (newScreenType != screenType) {
+            screenType = newScreenType;
+            if (screenType != 0) {
+                showMenu(baseSubmenuA);
+                showMenu(baseNavLink);
+            }
+        }
+    };
+
+    if (screenType != 0) {
+        showMenu(baseSubmenuA);
+        showMenu(baseNavLink);
     }
 </script>
 

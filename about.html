@@ -480,76 +480,75 @@
 
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <div class="menu-bottom">
-            <div class="menu-bottom-inner">
-                <ul class="nav">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">O компании</a>
-                        <ul class="submenu">
-                            <li><a href="">Общая информация </a></li>
-                            <li><a href="">Производственная база</a></li>
-                            <li><a href="">Склад </a></li>
-                            <li><a href="">Партнеры</a></li>
-                            <li><a href="">Материалы</a></li>
-                            <li><a href="">Мероприятия </a></li>
-                            <li><a href="">Вакансии</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Промышленность</a>
-                        <ul class="submenu">
-                            <li><a href="">Нефтехимическая</a></li>
-                            <li><a href="">Горнорудная</a></li>
-                            <li><a href="">Пищевая </a></li>
-                            <li><a href="">Производственные машины</a></li>
-
-                            <li><a href="">Комплексные проекты</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Энергетика</a>
-                        <ul class="submenu">
-                            <li><a href="">Аналитика</a></li>
-                            <li><a href="">АСУТП</a></li>
-                            <li><a href="">Генерация</a></li>
-                            <li><a href="">Проектирование</a></li>
-                            <li><a href="">Комплексные проекты</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <div>
-                            <a class="nav-link" href="#">Индустрия 4.0</a>
+        <div class="footer">
+            <div class="menu-bottom">
+                <div class="menu-bottom-inner">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">O компании</a>
                             <ul class="submenu">
-                                <li><a href="">Отрасли</a></li>
-                                <li><a href="">Решения</a></li>
-                                <li><a href="">Услуги </a></li>
+                                <li><a href="">Общая информация </a></li>
+                                <li><a href="">Производственная база</a></li>
+                                <li><a href="">Склад </a></li>
+                                <li><a href="">Партнеры</a></li>
+                                <li><a href="">Материалы</a></li>
+                                <li><a href="">Мероприятия </a></li>
+                                <li><a href="">Вакансии</a></li>
                             </ul>
-                        </div>
-                        <div>
-                            <a class="nav-link" href="#">Другое</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Промышленность</a>
                             <ul class="submenu">
-                                <li><a href="">Сертификаты</a></li>
-                                <li><a href="">Проекты</a></li>
-                                <li><a href="">Контакты</a></li>
-                        </div>
-                </ul>
-                </li>
-                </ul>
-            </div>
+                                <li><a href="">Нефтехимическая</a></li>
+                                <li><a href="">Горнорудная</a></li>
+                                <li><a href="">Пищевая </a></li>
+                                <li><a href="">Производственные машины</a></li>
 
-        </div>
-        <div class="spacer">
+                                <li><a href="">Комплексные проекты</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Энергетика</a>
+                            <ul class="submenu">
+                                <li><a href="">Аналитика</a></li>
+                                <li><a href="">АСУТП</a></li>
+                                <li><a href="">Генерация</a></li>
+                                <li><a href="">Проектирование</a></li>
+                                <li><a href="">Комплексные проекты</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <a class="nav-link" href="#">Индустрия 4.0</a>
+                                <ul class="submenu">
+                                    <li><a href="">Отрасли</a></li>
+                                    <li><a href="">Решения</a></li>
+                                    <li><a href="">Услуги </a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="nav-link" href="#">Другое</a>
+                                <ul class="submenu">
+                                    <li><a href="">Сертификаты</a></li>
+                                    <li><a href="">Проекты</a></li>
+                                    <li><a href="">Контакты</a></li>
+                            </div>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
 
-        </div>
-        <div class="licence">
-            <div class="wrapper">
-                <p>© Группа компаний SIMATEK</p>
+            </div>
+            <div class="spacer">
+
+            </div>
+            <div class="licence">
+                <div class="wrapper">
+                    <p>© Группа компаний SIMATEK</p>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
 </body>
@@ -687,44 +686,44 @@
 
     let showMenu = function (menu, toggleActive, toggleRed, animate) {
 
-var $this = menu;
+        var $this = menu;
 
-let hide = function (item) {
-    item.nextAll().removeClass('show');
-    item.nextAll().slideUp(animate ? 350 : 0);
-    if (toggleActive) { item.children().removeClass('active'); }
-    if (toggleRed) { item.parent().removeClass('red'); }
-}
+        let hide = function (item) {
+            item.nextAll().removeClass('show');
+            item.nextAll().slideUp(animate ? 350 : 0);
+            if (toggleActive) { item.children().removeClass('active'); }
+            if (toggleRed) { item.parent().removeClass('red'); }
+        }
 
-if ($this.next().hasClass('show')) {
-    hide($this);
-} else {
-    hide($this.parent().siblings("li").children("a"));
-    $this.next().toggleClass('show');
-    $this.next().slideToggle(animate ? 350 : 0);
-    if (toggleActive) { $this.children().toggleClass('active'); }
-    if (toggleRed) { $this.parent().toggleClass('red'); }
-}
-};
+        if ($this.next().hasClass('show')) {
+            hide($this);
+        } else {
+            hide($this.parent().siblings("li").children("a"));
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(animate ? 350 : 0);
+            if (toggleActive) { $this.children().toggleClass('active'); }
+            if (toggleRed) { $this.parent().toggleClass('red'); }
+        }
+    };
 
-if ($(window).width() < 600) {
-$('.submenu_a').click(function (e) {
-e.preventDefault();
-showMenu($(this), true, false, true);
-});
-
-
-$('.nav-link').click(function (e) {
-e.preventDefault();
-showMenu($(this), true, true, true);
-});
+    if ($(window).width() < 600) {
+        $('.submenu_a').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, false, true);
+        });
 
 
-$('.tab-wrap').click(function (e) {
-e.preventDefault();
-showMenu($(this), true, false, true);
-});
-}
+        $('.nav-link').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, true, true);
+        });
+
+
+        $('.tab-wrap').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, false, true);
+        });
+    }
 </script>
 
 </html>

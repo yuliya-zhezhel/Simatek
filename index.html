@@ -124,8 +124,9 @@
                     </div>
                 </div>
             </div>
-            <div class="main">
-                <div class="title wrapper">
+            <div class="main ">
+                <div class="wrapper">
+                <div class="title">
                     <h2>Наши направления</h2>
                 </div>
                 <div class="directions wrapper">
@@ -189,7 +190,7 @@
                     </div>
 
                 </div>
-                <div class="wrapper">
+                
                     <div class="title">
                         <h2>Проекты</h2>
                     </div>
@@ -391,59 +392,54 @@
                 </div>
 
                 <!-- carousel -->
-                <div class="che-slideshow">
-                    <div class="che-slideshow-slide">
-                        <img src="image/banner.png">
-                        <div class="che-slideshow-caption">
-                            <h4 class="che-slideshow-caption_h4">Региональная конференция<br>
-                                21 - 28 июля</h4>
-                            <p class="che-slideshow-caption_p">Индустрия 4.0: что мешает предприятиям внедрять новые
-                                технологии
-                            </p>
-                            <div class="btn btn-more">
-                                <a href="">Подробнее</a>
-                            </div>
 
+                <div id="carousel-custom" class="carousel slide che-slideshow" data-ride="carousel" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner che-slideshow-slide" role="listbox">
+                        <div class="item active">
+                            <img src="image/banner.png" alt="..." class="img-responsive">
+                            <div class="che-slideshow-caption">
+                                <h4 class="che-slideshow-caption_h4">Региональная конференция<br>
+                                    21 - 28 июля</h4>
+                                <p class="che-slideshow-caption_p">Индустрия 4.0: что мешает предприятиям внедрять новые
+                                    технологии
+                                </p>
+                                <div class="btn btn-more">
+                                    <a href="">Подробнее</a>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="image/banner.png" alt="..." class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img src="image/banner.png" alt="..." class="img-responsive">
                         </div>
                     </div>
-                    <div class="che-slideshow-slide inactive">
-                        <img src="image/banner.png">
-                        <div class="che-slideshow-caption">
-                            This is a caption for a photo.
-                        </div>
-                    </div>
-                    <div class="che-slideshow-slide inactive">
-                        <img src="image/banner.png">
-                        <div class="che-slideshow-caption">
-                            This is a caption for a photo.
-                        </div>
-                    </div>
-                    <div class="che-slideshow-slide inactive">
-                        <img src="image/banner.png">
-                        <div class="che-slideshow-caption">
-                            This is a caption for a photo.
-                        </div>
-                    </div>
-                    <div class="slideshow-indicator-wrapper">
-                        <div class="slideshow-left-control slideshow-control">
-                            <img src="image/arrow_left.svg" class="slideshow-left-arrow slideshow-arrow">
-                        </div>
-                        <ol class="slideshow-indicator-container">
-                            <li class="slideshow-indicator">
+
+                    <!-- Controls -->
+                    <div class="controls">
+                        <a class="left carousel-control" href="#carousel-custom" role="button" data-slide="prev">
+
+                            <img src="image/arrow_gray.png" alt="">
+                        </a>
+                        <ol class="carousel-indicators white">
+                            <li data-target="#carousel-custom" data-slide-to="0" class="active indicator">
                             </li>
-                            <li class="slideshow-indicator inactive-indicator">
+                            <li data-target="#carousel-custom" data-slide-to="1" class="indicator">
                             </li>
-                            <li class="slideshow-indicator inactive-indicator">
-                            </li>
-                            <li class="slideshow-indicator inactive-indicator">
+                            <li data-target="#carousel-custom" data-slide-to="2" class="indicator">
                             </li>
                         </ol>
+                        <a class="right carousel-control" href="#carousel-custom" role="button" data-slide="next">
 
-                        <div class="slideshow-right-control slideshow-control">
-                            <img src="image/arrow_left.svg" class="slideshow-right-arrow slideshow-arrow">
-                        </div>
+                            <img src="image/arrow_gray.png" alt="">
+                        </a>
                     </div>
-                </div>
+
+
+
             </div>
 
             <div class="contact-info-bg">
@@ -577,6 +573,23 @@
 
 </script>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https:////cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+<script>
+    /* swipe for courusel */
+    var hammer = new Hammer(document.querySelector('.carousel'));
+    var $carousel = $(".carousel").carousel({ "interval": 0 });
+    hammer.get("swipe");
+    hammer.on("swipeleft", function () {
+        $carousel.carousel("next");
+    });
+    hammer.on("swiperight", function () {
+        $carousel.carousel("prev");
+    });
+
+
+</script>
 <script>
     $(".search-btn").click(function () {
         if ($(window).width() > 978) {
@@ -638,23 +651,23 @@
     };
 
     if ($(window).width() < 600) {
-    $('.submenu_a').click(function (e) {
-        e.preventDefault();
-        showMenu($(this), true, false, true);
-    });
+        $('.submenu_a').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, false, true);
+        });
 
-    
-    $('.nav-link').click(function (e) {
-        e.preventDefault();
-        showMenu($(this), true, true, true);
-    });
 
-  
-    $('.tab-wrap').click(function (e) {
-        e.preventDefault();
-        showMenu($(this), true, false, true);
-    });
-}
+        $('.nav-link').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, true, true);
+        });
+
+
+        $('.tab-wrap').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, false, true);
+        });
+    }
 </script>
 
 </html>

@@ -166,7 +166,7 @@
 
                         <!-- Indicators -->
                         <ol
-                            class="carousel-indicators visible-sm-block hidden-xs-block visible-md-block visible-lg-block">
+                            class="carousel-indicators hidden">
                             <li data-target="#carousel-custom" data-slide-to="0" class="active">
                                 <img src="image/box3.png" alt="..." class="img-responsive">
                             </li>
@@ -472,6 +472,20 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https:////cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+<script>
+/* swipe for courusel */
+
+var hammer = new Hammer(document.querySelector('.carousel'));
+var $carousel = $(".carousel").carousel({"interval":0});
+hammer.get("swipe");
+hammer.on("swipeleft", function(){
+    $carousel.carousel("next");
+});
+hammer.on("swiperight", function(){
+    $carousel.carousel("prev");
+});
+</script>
 <script>
 
     jQuery(document).ready(function () {

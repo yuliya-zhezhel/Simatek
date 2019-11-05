@@ -268,53 +268,53 @@
                     </div>
                 </div>
 
-                    <div class="contact-info-bg">
-                        <div class="contact-info">
-                            <div class="title">
-                                <h2>Контакты</h2>
+                <div class="contact-info-bg">
+                    <div class="contact-info">
+                        <div class="title">
+                            <h2>Контакты</h2>
+                        </div>
+                        <div class="contacts">
+                            <div class="box box1">
+                                <img src="image/icon_location.svg" alt="" class="box-icon">
+                                <p>ООО "Симатек Групп"<br>
+                                    220043, Республика Беларусь,
+                                    Минск, пр-т Независимости 95 корпус 7, офис 25,<br>
+                                    ст. метро Парк Челюскинцев </p>
                             </div>
-                            <div class="contacts">
-                                <div class="box box1">
-                                    <img src="image/icon_location.svg" alt="" class="box-icon">
-                                    <p>ООО "Симатек Групп"<br>
-                                        220043, Республика Беларусь,
-                                        Минск, пр-т Независимости 95 корпус 7, офис 25,<br>
-                                        ст. метро Парк Челюскинцев </p>
+                            <div class="box box2">
+                                <img src="image/icon_phone.svg" alt="" class="box-icon">
+                                <div class="phones">
+                                    <a href="tel:+375 (17) 280 47 20">+375 (17) 280 47 20</a><br>
+                                    <a href="tel: +375 (17) 287 35 81"> +375 (17) 287 35 81</a><br>
+                                    <a href="tel:+375 (29) 1 108 108"> +375 (29) 1 108 108</a><br>
+                                    <a href="tel:+375 (29) 5 669 701"> +375 (29) 5 669 701</a><br>
                                 </div>
-                                <div class="box box2">
-                                    <img src="image/icon_phone.svg" alt="" class="box-icon">
-                                    <div class="phones">
-                                        <a href="tel:+375 (17) 280 47 20">+375 (17) 280 47 20</a><br>
-                                        <a href="tel: +375 (17) 287 35 81"> +375 (17) 287 35 81</a><br>
-                                        <a href="tel:+375 (29) 1 108 108"> +375 (29) 1 108 108</a><br>
-                                        <a href="tel:+375 (29) 5 669 701"> +375 (29) 5 669 701</a><br>
-                                    </div>
+                            </div>
+                            <div class="box box3">
+                                <img src="image/icon_mail.png" alt="" class="box-icon">
+                                <a href="mailto:simatek@simatek.by" class="box-link">simatek@simatek.by</a>
+                                <div class="social">
+                                    <a class="fb" href="https://www.facebook.com/simatekminsk/ ">
+
+                                    </a>
+                                    <a class="in"
+                                        href="https://www.linkedin.com/company/simatek-group/?trk=biz-companies-cym ">
+
+                                    </a>
+
                                 </div>
-                                <div class="box box3">
-                                    <img src="image/icon_mail.png" alt="" class="box-icon">
-                                    <a href="mailto:simatek@simatek.by" class="box-link">simatek@simatek.by</a>
-                                    <div class="social">
-                                        <a class="fb" href="https://www.facebook.com/simatekminsk/ ">
-                
-                                        </a>
-                                        <a class="in"
-                                            href="https://www.linkedin.com/company/simatek-group/?trk=biz-companies-cym ">
-                
-                                        </a>
-                
-                                    </div>
-                                    <div class="btn btn-more">
-                                        <a href="#" class="">Связаться с нами</a>
-                                    </div>
+                                <div class="btn btn-more">
+                                    <a href="#" class="">Связаться с нами</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
+
+
             </div>
         </div>
+
 
         <div class="footer">
             <div class="menu-bottom">
@@ -522,44 +522,44 @@
 
     let showMenu = function (menu, toggleActive, toggleRed, animate) {
 
-var $this = menu;
+        var $this = menu;
 
-let hide = function (item) {
-    item.nextAll().removeClass('show');
-    item.nextAll().slideUp(animate ? 350 : 0);
-    if (toggleActive) { item.children().removeClass('active'); }
-    if (toggleRed) { item.parent().removeClass('red'); }
-}
+        let hide = function (item) {
+            item.nextAll().removeClass('show');
+            item.nextAll().slideUp(animate ? 350 : 0);
+            if (toggleActive) { item.children().removeClass('active'); }
+            if (toggleRed) { item.parent().removeClass('red'); }
+        }
 
-if ($this.next().hasClass('show')) {
-    hide($this);
-} else {
-    hide($this.parent().siblings("li").children("a"));
-    $this.next().toggleClass('show');
-    $this.next().slideToggle(animate ? 350 : 0);
-    if (toggleActive) { $this.children().toggleClass('active'); }
-    if (toggleRed) { $this.parent().toggleClass('red'); }
-}
-};
+        if ($this.next().hasClass('show')) {
+            hide($this);
+        } else {
+            hide($this.parent().siblings("li").children("a"));
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(animate ? 350 : 0);
+            if (toggleActive) { $this.children().toggleClass('active'); }
+            if (toggleRed) { $this.parent().toggleClass('red'); }
+        }
+    };
 
-if ($(window).width() < 600) {
-$('.submenu_a').click(function (e) {
-e.preventDefault();
-showMenu($(this), true, false, true);
-});
-
-
-$('.nav-link').click(function (e) {
-e.preventDefault();
-showMenu($(this), true, true, true);
-});
+    if ($(window).width() < 600) {
+        $('.submenu_a').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, false, true);
+        });
 
 
-$('.tab-wrap').click(function (e) {
-e.preventDefault();
-showMenu($(this), true, false, true);
-});
-}
+        $('.nav-link').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, true, true);
+        });
+
+
+        $('.tab-wrap').click(function (e) {
+            e.preventDefault();
+            showMenu($(this), true, false, true);
+        });
+    }
 </script>
 
 </html>

@@ -2,25 +2,36 @@
 @import "typography.scss";
 @import "main.scss";
 
-
-.che-slideshow {
+#carousel-custom.che-slideshow {
   overflow: hidden;
   position: relative;
   height: 371px;
   max-width: 1022px;
   margin: 0 auto;
 }
-.che-slideshow-block{
+.che-slideshow-block {
   display: flex;
   flex-direction: row;
-  .che-slideshow-s{
-        max-width: 300px;
-      width: 100%;  
-    img{
+  .che-slideshow-s {
+    max-width: 300px;
+    width: 100%;
+    img {
       max-width: 300px;
-      width: 100%;  
+      width: 100%;
     }
   }
+}
+.che-slideshow .carousel-control.left img {
+  filter: brightness(200%);
+}
+.che-slideshow .carousel-control.right img {
+  filter: brightness(200%);
+}
+#carousel-custom.che-slideshow .controls {
+  position: absolute;
+  right: 67px;
+  bottom: 40px;
+  width: 100%;
 }
 .che-slideshow-slide {
   width: 100%;
@@ -40,9 +51,9 @@
     padding: 30px 34px 50px 46px;
     margin: 0 auto 0 69px;
     .che-slideshow-caption_h4 {
-      font-family: $Montserrat;
+      font-family: "Montserrat", sans-serif;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 24px;
       line-height: 32px;
       margin-bottom: 17px;
@@ -58,22 +69,21 @@
     }
     .btn-more {
       border: 2px solid $red;
-      a{
-             padding: 7px 17px; 
-             font-family: $Roboto;
-             font-style: normal;
-             font-weight: normal;
-             font-size: 14px;
-             line-height: 16px;
-             display: flex;
-             justify-content: center;
-             align-items: center;
+      a {
+        padding: 7px 17px;
+        font-family: $Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       &:hover {
         border: 2px solid $black;
       }
     }
-
   }
 
   img {
@@ -125,59 +135,85 @@
   }
 }
 .slideshow-indicator {
-    background-color: #fff;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    display: inline-block;
-    height: 2px;
-    width: 2px;
-    margin: 0 5px;
-    &.inactive-indicator {
-      background-color: transparent;
-    }
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 2px;
+  width: 2px;
+  margin: 0 5px;
+  &.inactive-indicator {
+    background-color: transparent;
   }
-  .che-slideshow{
-	margin:0 auto 0px auto;  
-  }
+}
+.che-slideshow {
+  margin: 0 auto 0px auto;
+}
 
 @media #{$tablet} {
-
+  #carousel-custom.che-slideshow .controls {
+    bottom: 17px;
+  }
 }
 @media #{$tablet-mini} {
   .che-slideshow-slide {
     display: flex;
     justify-content: center;
+    height: 100%;
   }
   .che-slideshow-slide .che-slideshow-caption {
-	margin: 0 auto;
-
+    margin: 0 auto;
   }
 }
 @media #{$phone} {
-	.che-slideshow{
-		margin: 0 auto;
-		height: 411px;
-	}
+  .che-slideshow {
+    margin: 0 auto;
+    height: 411px;
+  }
+  #carousel-custom .carousel-indicators{
+    display: flex;
+    &.hidden{
+      display:none;
+    }
+  }
+  #carousel-custom.che-slideshow .controls{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 0;
+  }
+  #carousel-custom .carousel-control.right{
+    display: none;
+  }
+  #carousel-custom .carousel-control.left{
+    display: none;
+  }
+  #carousel-custom .carousel-indicators.white .indicator.active{
+    background: $black;
+  }
+  #carousel-custom .carousel-indicators.white .indicator{
+    border: 1px solid $black;
+    z-index: 10;
+  }
   .che-slideshow-slide .che-slideshow-caption {
     margin: 0;
     padding: 0;
     bottom: 0px;
     top: auto;
-	padding: 27px 20px;
+    padding: 27px 20px;
     .btn-more {
       margin: 0 auto;
     }
     .che-slideshow-caption_h4 {
       font-size: 16px;
-	  line-height: 134.09%;
-	  font-weight: 600;
-
+      line-height: 134.09%;
+      font-weight: 600;
     }
     .che-slideshow-caption_p {
       font-size: 12px;
-	  line-height: 128.91%;
-	  margin-bottom: 25px;
-
+      line-height: 128.91%;
+      margin-bottom: 25px;
     }
   }
   .slideshow-indicator {
@@ -185,13 +221,13 @@
     background: $black;
   }
   .slideshow-indicator-wrapper {
-	right: 0px;
+    right: 0px;
     left: 0;
-	.slideshow-indicator-container{
-    margin: 0 auto;
+    .slideshow-indicator-container {
+      margin: 0 auto;
+    }
+    .slideshow-control {
+      display: none;
+    }
   }
-  .slideshow-control {
-	display: none;
-  }
-}
 }

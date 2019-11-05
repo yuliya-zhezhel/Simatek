@@ -3120,7 +3120,7 @@ img {
         }
         .directions {
           flex-direction: column;
-          margin: 0 40px 36px 40px;
+          margin: 0 0px 36px 0px;
           .box {
             max-width: 100%;
             display: flex;
@@ -3525,7 +3525,7 @@ img {
     position: absolute;
   }
   .breadcrumbs {
-    max-width: 446px;
+    max-width: 455px;
   }
   .breadcrumbs__item--first {
     white-space: nowrap;
@@ -3554,6 +3554,7 @@ img {
   }
   #carousel-custom .carousel-indicators li .img-responsive {
     height: 156px;
+    max-width: 219px;
   }
   .project-description {
     margin: 0 40px 46px 40px;

@@ -465,7 +465,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 8px 22px;
+            padding: 8px 21px;
           }
           &:hover {
             background: $black;
@@ -3525,7 +3525,7 @@ img {
     position: absolute;
   }
   .breadcrumbs {
-    max-width: 455px;
+    max-width: 950px;
   }
   .breadcrumbs__item--first {
     white-space: nowrap;
